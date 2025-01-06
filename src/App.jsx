@@ -6,9 +6,9 @@ import Projects from './pages/projects'
 import About from './pages/about'
 import Blog from './pages/blog'
 import Certifications from './pages/certifications'
-// import SplashScreen from './components/splashscreen'
+import SplashScreen from './components/splashscreen'
 import BlogPage from './pages/blogPage'
-// import { useState } from 'react'
+import { useState } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
 import ScrollToTop from './utils/ScrollToTop'
 
@@ -16,18 +16,18 @@ import ScrollToTop from './utils/ScrollToTop'
 
 
 function App() {
-  // const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(true);
 
-  //   const handleSplashFinish = () => {
-  //       setShowSplash(false);
-  //   };
+    const handleSplashFinish = () => {
+        setShowSplash(false);
+    };
 
   return (
     <>
       
-      {/* {showSplash ? (
+      {showSplash ? (
                 <SplashScreen onFinish={handleSplashFinish} />
-            ) : ( */}
+            ) : (
           <HelmetProvider>
             <BrowserRouter>
             <ScrollToTop />
@@ -43,7 +43,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       </HelmetProvider>
-      {/* )} */}
+      )}
     </>
   )
 }
