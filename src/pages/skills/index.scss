@@ -1,0 +1,125 @@
+@use '/src/assets/scss/breakpoint';
+
+.stacks {
+    background-color: #fff;
+    padding: 45px;
+    max-width: 960px;
+    padding-top: 0;
+    @include breakpoint.breakpoint-custom-down(985) {
+        padding: 0;
+        padding-top: 5rem;
+    }  
+}
+
+.stacks-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.stacks-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.stacksCard-wrapper {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.stacksCard-inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-direction: column;
+    @include breakpoint.breakpoint-custom-down(580) {
+        padding: 20px 10px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+}
+
+.stacks--item-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    @include breakpoint.breakpoint-custom-down(768) {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include breakpoint.breakpoint-custom-down(580) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.stacks--item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+
+
+    &:hover {
+        background-color: #f9f9f9;
+        border: 1px solid #e0e0e0;
+        scale: 1.04;
+    }
+}
+
+.stacks-logo {
+    width: 40px;
+    height: auto;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    svg {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.stacks--item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    p {
+        font-size: .978rem;
+        font-weight: 400;
+        color: rgb(101, 101, 101);
+    }
+}

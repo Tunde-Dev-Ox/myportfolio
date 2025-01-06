@@ -1,0 +1,113 @@
+@use '/src/assets/scss/breakpoint';
+
+.certifications {
+    background-color: #fff;
+    padding: 45px;
+    max-width: 960px;
+    padding-top: 0;
+    @include breakpoint.breakpoint-custom-down(985) {
+        padding: 0;
+        padding-top: 5rem;
+    }
+}
+
+.certifications_header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.certifications_subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 14px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.education__card-wrapper {
+    width: 30%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    @include breakpoint.breakpoint-custom-down(580) {
+        width: 100%;
+    }
+
+    .education__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        flex-direction: column;
+        text-decoration: none;
+        &:hover {
+            background-color: #f3f3f3;
+            border-radius: 8px;
+        }
+
+        h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #000;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #000;
+        }
+
+        span {
+            font-size: .875rem;
+            font-weight: 400;
+            color: #504f4f;
+        }
+    }
+}
+
+.certifications_card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    @include breakpoint.breakpoint-custom-down(580) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.certifications_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4px 10px;
+    flex-direction: column;
+    text-decoration: none;
+    &:hover {
+        background-color: #f3f3f3;
+        border-radius: 8px;
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #000;
+    }
+
+    span {
+        font-size: .875rem;
+        font-weight: 400;
+        color: #504f4f;
+    }
+}

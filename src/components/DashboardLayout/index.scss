@@ -1,0 +1,32 @@
+@use '/src/assets/scss/variables';
+@use '/src/assets/scss/mixins';
+@use '/src/assets/scss/breakpoint';
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 240px auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar main";
+    height: auto;
+    @include breakpoint.breakpoint-custom-down(985) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "main";
+    }
+}
+
+.main__content-wrapper {
+    grid-area: main;
+    background-color: rgb(250, 250, 250);
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+
+    .main__content {
+        height: auto;
+        width: 100%;
+        position: relative;
+        padding: 10px;
+    }
+}

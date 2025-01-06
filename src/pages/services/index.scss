@@ -1,0 +1,133 @@
+@use '/src/assets/scss/breakpoint';
+
+.services {
+    background-color: #fff;
+    padding: 45px;
+    max-width: 960px;
+    padding-top: 0;
+    @include breakpoint.breakpoint-custom-down(985) {
+        padding: 0;
+        padding-top: 5rem;
+    }  
+}
+
+.services-header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.services-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 14px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.services-cta {
+    cursor: pointer;
+        display: inline-block;
+        margin: 0px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        width: auto;
+        touch-action: manipulation;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 6px;
+        outline: none;
+        padding: 12px 30px;
+        transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+        -webkit-tap-highlight-color: transparent;
+        border: none;
+        margin-bottom: 2rem;
+}
+
+.services--card-wrapper {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: rgb(243, 243, 243);
+
+    .services--card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        flex-direction: column;
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: .956rem;
+            font-weight: 300;
+            color: #000;
+            margin-bottom: 10px;
+            max-width: 560px;
+        }
+
+        ul {
+            list-style: disc;
+            list-style-position: inside;
+            li {
+                font-size: .956rem;
+                font-weight: 300;
+                color: #666565;
+                margin-bottom: 10px;
+            }
+        }
+
+        .services--card-cta {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 20px;
+
+            button {
+                cursor: pointer;
+                display: inline-block;
+                margin: 0px;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+                width: auto;
+                touch-action: manipulation;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 6px;
+                outline: none;
+                padding: 12px 30px;
+                transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+                -webkit-tap-highlight-color: transparent;
+                border: 1px  solid #ccc;
+                margin-right: 14px;
+                @include breakpoint.breakpoint-custom-down(450) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+
+            button:last-child {
+                background: #000;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
