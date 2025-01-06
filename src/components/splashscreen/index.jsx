@@ -7,7 +7,7 @@ const SplashScreen = ({ onFinish }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             onFinish();
-        }, 12000); // Display splash screen for 3 seconds
+        }, 4000); 
 
         const interval = setInterval(() => {
             setCount(prevCount => {
@@ -18,7 +18,7 @@ const SplashScreen = ({ onFinish }) => {
                     return prevCount;
                 }
             });
-        }, 120); // Update count every 30ms to reach 100 in 3 seconds
+        }, 40);
 
         return () => {
             clearTimeout(timer);
