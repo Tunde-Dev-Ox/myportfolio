@@ -1,0 +1,52 @@
+@use '/src/assets/scss/breakpoint';
+
+.mobile_footer_menu {
+    display: none;
+    @include breakpoint.breakpoint-custom-down(985) {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        padding: 10px;
+        height: clamp(3.438rem, 3.097rem + 1.7vw, 4.375rem);
+        border-top: 1px solid #e0e0e0;
+        background-color: #eae9e9;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.mobile_footer_menu__wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    a {
+        text-decoration: none;
+        color: rgb(101,101,101);
+        font-size: 1rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-radius: 5px;
+        // background-color: #fff;
+        // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        padding: 10px;
+
+        svg {
+            font-size: 1.2rem;
+        }
+    }
+}

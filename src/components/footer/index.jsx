@@ -17,7 +17,7 @@ const Footer = () => {
         hours = `0${hours}`;
     }
 
-    const available = hours > 0 && hours <= 6 ? 'sleeping 🛌' : 'sleeping 💻';
+    const available = hours > 0 && hours <= 6 ? 'sleeping 🛌' : 'working 💻';
 
     return (
         <div className="footer">

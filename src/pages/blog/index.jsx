@@ -72,7 +72,7 @@ const Blog = () => {
                         </div>
                     )
                 }
-                <div className="blog__pagination">
+                {/* <div className="blog__pagination">
                     <button className="blog__pagination-button">1</button>
                     <button className="blog__pagination-button">2</button>
                     <button className="blog__pagination-button">3</button>
@@ -83,7 +83,7 @@ const Blog = () => {
                     <button className="blog__pagination-button">8</button>
                     <button className="blog__pagination-button">9</button>
                     <button className="blog__pagination-button">10</button>
-                </div>
+                </div> */}
                 <SubscribeCard />
             </div>
         </DashboardLayout>

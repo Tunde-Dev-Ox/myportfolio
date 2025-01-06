@@ -6,6 +6,7 @@
     background-color: rgb(243, 243, 243);
     height: auto;
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 .footer__wrapper {
@@ -98,7 +99,7 @@
 
     .footer__mid-right {
         p {
-            font-size: 4.5rem;
+            font-size: clamp(3.5rem, 3.136rem + 1.82vw, 4.5rem);
             font-weight: 500;
             color: #817e7e;
             margin-bottom: 10px;

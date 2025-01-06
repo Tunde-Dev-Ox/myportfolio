@@ -13,8 +13,6 @@ import { HelmetProvider } from 'react-helmet-async'
 import ScrollToTop from './utils/ScrollToTop'
 
 
-
-
 function App() {
   const [showSplash, setShowSplash] = useState(true);
 

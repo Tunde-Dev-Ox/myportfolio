@@ -1,5 +1,6 @@
 import './index.scss';
 import { Link } from "react-router-dom";
+import { RiCalendarScheduleLine } from "react-icons/ri";
 
 const MobileHeader = () => {
     return (
@@ -15,11 +16,9 @@ const MobileHeader = () => {
                     </p>
                 </div>
             </Link>
-            <div className="mobile__hamburger">
-                <div className="hamburger__line"></div>
-                <div className="hamburger__line"></div>
-                <div className="hamburger__line"></div>
-            </div>
+            <Link to="/" className="mobile__hamburger">
+                <RiCalendarScheduleLine />
+            </Link>
         </div>
     )
 }

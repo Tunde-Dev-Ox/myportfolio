@@ -4,8 +4,6 @@ import { FaDiagramProject, FaGithub, FaLinkedin, FaSpotify, FaTwitter } from "re
 import { ImProfile } from "react-icons/im";
 import { GiSkills } from "react-icons/gi";
 import { TbWriting } from "react-icons/tb";
-import { FaBriefcase } from "react-icons/fa";
-import { IoMdStats } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import { BiCertification } from 'react-icons/bi';
 import { CiMail } from 'react-icons/ci';

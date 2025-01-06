@@ -56,7 +56,7 @@ const Projects = () => {
                         link="/projects/connectly"
                     />
                 </div>
-                <h1 className="projects-header">
+                <h1 className="personal--projects-header">
                     Personal Projects
                 </h1>
                 <p className="projects-subtitle">

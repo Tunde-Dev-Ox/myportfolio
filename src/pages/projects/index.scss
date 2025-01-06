@@ -19,6 +19,14 @@
     line-height: 1.5;
 }
 
+.personal--projects-header {
+    font-size: clamp(1.3rem, 1.045rem + 1.27vw, 2rem);
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
 .projects-subtitle {
     font-size: 1rem;
     font-weight: 400;
