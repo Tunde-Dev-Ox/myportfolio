@@ -10,13 +10,15 @@
     max-width: 900px;
     margin: 0 auto;
     padding-top: 0;
-    padding-top: 5rem;
+    @include breakpoint.breakpoint-custom-down(985) {
+        padding-top: 4rem;
+    }
 }
 
 .blog_page__title {
     font-size: clamp(1.8rem, 1.613rem + 0.52vw, 2rem);
     font-weight: 700;
-    color: #000;
+    color: #a3a2a2;
     margin-bottom: 14px;
     line-height: 1.5;
 }
@@ -68,6 +70,7 @@
 .blog_page__content {
     max-width: 700px;
     margin: 0 auto;
+    color: #a3a2a2;
 }
 
 .author__details {

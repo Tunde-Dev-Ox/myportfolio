@@ -68,16 +68,6 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link to="/">
-                                        Hapara
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/">
-                                        Skoolboots
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/">
                                         Lingroks
                                     </Link>
                                 </li>

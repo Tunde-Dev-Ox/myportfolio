@@ -4,7 +4,7 @@
 
 .sidebar {
     grid-area: sidebar;
-    background-color: rgb(250, 250, 250);
+    background-color: #0d0d0d;
     height: auto;
     width: 240px;
     position: fixed;
@@ -54,11 +54,11 @@
         h4 {
             font-size: 1rem;
             font-weight: 700;
-            color: variables.$text;
+            color: #fff;
         }
         p {
             font-size: 0.8rem;
-            color: variables.$text;
+            color: rgb(101,101,101);
         }
     }
 }
@@ -118,7 +118,7 @@
                     span {
                         padding: 8px 12px;
                         border-radius: 5px;
-                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        border: 1px solid rgba(101,101,101);
                     }
                 }
             }

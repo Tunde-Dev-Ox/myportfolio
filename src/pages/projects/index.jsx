@@ -47,14 +47,6 @@ const Projects = () => {
                         projectYear="2025"
                         link="/projects/lingroks"
                     />
-                    <ProjectCard 
-                        projectImage="https://framerusercontent.com/images/KLl6DuQOJhnx9owbonqYSpcHk8.jpg?scale-down-to=1024"
-                        projectTitle="Connectly"
-                        projectDescription="A dating app that connects people based on their interests."
-                        alt="Connectly"
-                        projectYear="2025"
-                        link="/projects/connectly"
-                    />
                 </div>
                 <h1 className="personal--projects-header">
                     Personal Projects

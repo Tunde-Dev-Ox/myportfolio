@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer';
 import BlogCard from '../../components/blogCard';
 import SubscribeCard from '../../components/subscribeCard';
-import {BLOCKS} from '@contentful/rich-text-types';
+import {BLOCKS, INLINES} from '@contentful/rich-text-types';
 import {Helmet} from 'react-helmet-async';
 
 const BlogPage = () => {

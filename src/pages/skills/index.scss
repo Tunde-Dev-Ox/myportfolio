@@ -1,7 +1,7 @@
 @use '/src/assets/scss/breakpoint';
 
 .stacks {
-    background-color: #fff;
+    background-color: inherit;
     padding: 45px;
     max-width: 960px;
     padding-top: 0;
@@ -14,7 +14,7 @@
 .stacks-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #000;
+    color: #fff;
     margin-bottom: 14px;
     line-height: 1.5;
 }
@@ -24,6 +24,10 @@
     font-weight: 400;
     margin-bottom: 14px;
     line-height: 1.5;
+    background: #82877E;
+    background: linear-gradient(to right, #82877E 9%, #C2C8FF 50%, #CFCFCF 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .stacksCard-wrapper {
@@ -46,7 +50,7 @@
     h3 {
         font-size: 1.2rem;
         font-weight: 700;
-        color: #000;
+        color: rgb(101, 101, 101);
         margin-bottom: 10px;
         margin-left: 20px;
     }
@@ -79,12 +83,18 @@
     cursor: pointer;
     border: 1px solid transparent;
     transition: all 0.3s ease;
+    background-color: #000;
+    border: 1px solid rgb(101, 101, 101);
 
 
     &:hover {
         background-color: #f9f9f9;
         border: 1px solid #e0e0e0;
         scale: 1.04;
+
+        h4 {
+            color: #000;
+        }
     }
 }
 
@@ -114,7 +124,7 @@
     h4 {
         font-size: 1rem;
         font-weight: 700;
-        color: #000;
+        color: rgb(101, 101, 101);
     }
 
     p {

@@ -1,7 +1,7 @@
 @use '/src/assets/scss/breakpoint';
 
 .certifications {
-    background-color: #fff;
+    background-color: inherit;
     padding: 45px;
     max-width: 960px;
     padding-top: 0;
@@ -14,7 +14,7 @@
 .certifications_header {
     font-size: 2rem;
     font-weight: 700;
-    color: #000;
+    color: #fff;
     margin-bottom: 14px;
     line-height: 1.5;
 }
@@ -25,11 +25,15 @@
     margin-bottom: 14px;
     line-height: 1.5;
     max-width: 500px;
+    background: #82877E;
+    background: linear-gradient(to right, #82877E 9%, #C2C8FF 50%, #CFCFCF 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .education__card-wrapper {
     width: 30%;
-    border: 1px solid #e0e0e0;
+    border: 1px solid rgb(101, 101, 101);
     border-radius: 8px;
     margin-bottom: 20px;
     @include breakpoint.breakpoint-custom-down(580) {
@@ -46,18 +50,21 @@
         &:hover {
             background-color: #f3f3f3;
             border-radius: 8px;
+            h4, p, span {
+                color: #000;
+            }
         }
 
         h4 {
             font-size: 1rem;
             font-weight: 700;
-            color: #000;
+            color: rgb(101, 101, 101);
         }
 
         p {
             font-size: 1rem;
             font-weight: 400;
-            color: #000;
+            color: rgb(101, 101, 101);
         }
 
         span {
@@ -74,7 +81,7 @@
     gap: 20px;
     padding: 20px;
     width: 100%;
-    border: 1px solid #e0e0e0;
+    border: 1px solid rgb(101, 101, 101);
     border-radius: 8px;
     @include breakpoint.breakpoint-custom-down(580) {
         grid-template-columns: repeat(1, 1fr);
@@ -91,18 +98,22 @@
     &:hover {
         background-color: #f3f3f3;
         border-radius: 8px;
+
+        h4, p, span {
+            color: #000;
+        }
     }
 
     h4 {
         font-size: 1rem;
         font-weight: 700;
-        color: #000;
+        color: rgb(101, 101, 101);
     }
 
     p {
         font-size: 1rem;
         font-weight: 400;
-        color: #000;
+        color: rgb(101, 101, 101);
     }
 
     span {
