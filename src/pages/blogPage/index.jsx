@@ -1,3 +1,4 @@
+import React from 'react'
 import DashboardLayout from '../../components/DashboardLayout'
 import './index.scss'
 import { useParams } from 'react-router-dom';
@@ -6,23 +7,42 @@ import { useEffect, useState } from 'react';
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer';
 import BlogCard from '../../components/blogCard';
 import SubscribeCard from '../../components/subscribeCard';
-import {BLOCKS, INLINES} from '@contentful/rich-text-types';
+import {BLOCKS} from '@contentful/rich-text-types';
 import {Helmet} from 'react-helmet-async';
 
 const BlogPage = () => {
     const { slug } = useParams();
     const [blog, setBlog] = useState(null);
     const options = {
+        renderText: (text) =>
+            text.split('\n').map((segment, index) => (
+                <React.Fragment key={index}>
+                    {segment}
+                    {index < text.split('\n').length - 1 && <br />}
+                </React.Fragment>
+            )),
         renderNode: {
-            [BLOCKS.PARAGRAPH]: (node, children) => (
-                <p style={{ fontSize: '14px', lineHeight: '1.6' }}>{children}</p>
-              ),
-              [BLOCKS.HEADING_1]: (node, children) => (
-                <h1 style={{ fontSize: '28px', fontWeight: 'bold' }}>{children}</h1>
-              ),
-              [BLOCKS.HEADING_2]: (node, children) => (
-                <h2 style={{ fontSize: '24px', fontWeight: 'bold' }}>{children}</h2>
-              ),
+             [BLOCKS.PARAGRAPH]: (node, children) => (
+            <p style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '18px' }}>{children}</p>
+        ),
+        [BLOCKS.HEADING_1]: (node, children) => (
+            <h1 style={{ fontSize: '28px', fontWeight: 'bold', marginBottom: '25px' }}>{children}</h1>
+        ),
+        [BLOCKS.HEADING_2]: (node, children) => (
+            <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h2>
+        ),
+        [BLOCKS.HEADING_3]: (node, children) => (
+            <h3 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h3>
+        ),
+        [BLOCKS.HEADING_4]: (node, children) => (
+            <h4 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h4>
+        ),
+        [BLOCKS.HEADING_5]: (node, children) => (
+            <h5 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h5>
+        ),
+        [BLOCKS.HEADING_6]: (node, children) => (
+            <h6 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h6>
+        ),
         }
     }
     useEffect(() => {
