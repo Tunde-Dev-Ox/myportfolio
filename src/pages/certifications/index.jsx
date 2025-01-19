@@ -33,7 +33,7 @@ const Certifications = () => {
                     </Link>
                 </div>
                 <div className="certifications_card__wrapper">
-                    <Link to="/" className="certifications_card">
+                    {/* <Link to="/" className="certifications_card">
                         <h4>
                             CAPM 
                         </h4>
@@ -43,7 +43,7 @@ const Certifications = () => {
                         <span>
                             2025
                         </span>
-                    </Link>
+                    </Link> */}
                     <Link to="https://coursera.org/share/3c07f0c2133d85e778013d95c05420bb" className="certifications_card">
                         <h4>
                             Software Product Management

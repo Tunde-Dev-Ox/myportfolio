@@ -124,7 +124,7 @@ const Sidebar = () => {
                              </span>
                              <div className="list--number">
                                 <span>
-                                    9
+                                    7
                                 </span>
                              </div>
                         </Link>

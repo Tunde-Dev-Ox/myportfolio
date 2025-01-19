@@ -4,7 +4,7 @@
 .home {
     background-color: inherit;
     padding: 45px;
-    padding-top: 0;
+    padding-top: 2rem;
     @include breakpoint.breakpoint-custom-down(985) {
         padding: 0;
         padding-top: 5rem;
@@ -69,14 +69,14 @@
         border: none;
     }
 
-    a {
+    a:first-child {
         background-color: #fff;
         color: #000;
         margin-right: 14px;
         border: 1px solid #000;
     }
 
-    button:last-child {
+    a:last-child {
         background: #000;
         color: #fff;
         display: flex;

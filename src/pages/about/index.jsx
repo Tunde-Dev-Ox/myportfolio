@@ -17,13 +17,12 @@ const About = () => {
             <h1 className="about-header">About Tunde</h1>
             <div className="about_top__wrapper">
                 <p className="about-subtitle">
-                    Joseph Tunde, CAPM <br /> Technical Product Manager <br /> Software Developer
+                    From Nigeria&rsquo;s finest University, Joseph Tunde is a product manager who is passionate about product and technology. With three years of experience in product management, he is always looking to learn new things and build usable products.
                 </p>
                 <figure>
-                     <img src="/tunde.jpg" alt="Tunde" />
+                     <img src="/tunde.png" alt="Tunde" />
                </figure>
             </div>
-            <div className="about__empty_div"></div>
             <div className="about--card-wrapper">
                <div className="about-content">
                     <p>
@@ -45,7 +44,7 @@ const About = () => {
                     <p>
                         Choosing to work with Joseph means choosing to work with a team player who is passionate about excellence and success. He is always looking to learn new things and is open to feedback that will help him grow.
                     </p>
-                    <div className="home-cta--wrapper">
+                    <div className="home-cta--wrapper about-cta">
                     <Link to="/services" className='home-cta'>
                         What I do
                     </Link>

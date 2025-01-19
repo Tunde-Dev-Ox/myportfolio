@@ -121,8 +121,8 @@ const Footer = () => {
                                 &copy; {year} Joseph Tunde
                             </p>
                             <span>
-                                Built with ♥💓💖, pure React.js, SCSS, and Contentful by <Link to='https://x.com/__jot'>
-                                    @Joseph Tunde
+                                Built with 💓, React.js, SCSS, and Contentful by <Link to='https://x.com/__jot'>
+                                    Joseph Tunde
                                 </Link>
                             </span>
                         </div>

@@ -4,7 +4,7 @@
     background-color: inherit;
     padding: 45px;
     max-width: 960px;
-    padding-top: 0;
+    padding-top: 2rem;
     @include breakpoint.breakpoint-custom-down(985) {
         padding: 0;
         padding-top: 5rem;
@@ -32,7 +32,7 @@
 }
 
 .services-cta {
-    cursor: pointer;
+        cursor: pointer;
         display: inline-block;
         margin: 0px;
         position: relative;
@@ -47,8 +47,9 @@
         padding: 12px 30px;
         transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
         -webkit-tap-highlight-color: transparent;
-        border: none;
+        border: 1px solid #818080;
         margin-bottom: 2rem;
+        color: #fff;
 }
 
 .services--card-wrapper {
@@ -100,7 +101,7 @@
             align-items: center;
             margin-top: 20px;
 
-            button {
+            a, button {
                 cursor: pointer;
                 display: inline-block;
                 margin: 0px;
@@ -124,9 +125,15 @@
                 }
             }
 
-            button:last-child {
+            a {
+                background-color: #818080;
+                color: #000;
+                border: 1px solid #000;
+            }
+
+            button {
                 background: #000;
-                color: #fff;
+                color: #818080;
                 display: flex;
                 justify-content: center;
                 align-items: center;

@@ -4,6 +4,14 @@ import { FaCopy } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 
 const Services = () => {
+    const email = "iamjosephtunde@gmail.com"
+    const handleCopyEmail = () => {
+        navigator.clipboard.writeText(email).then(() => {
+            alert('Email copied to clipboard')
+        }).catch((error) => {
+            console.log("Error copying email: ", error)
+        });
+    }
     return(
         <DashboardLayout>
             <div className="services">
@@ -13,9 +21,9 @@ const Services = () => {
                 <p className="services-subtitle">
                     Blending creativity with technology to deliver functional and beautiful products.
                 </p>
-                <button className='services-cta'>
+                <Link to="https://calendly.com/iamjosephtunde/consult_tunde" className='services-cta'>
                     Schedule a call
-                </button>
+                </Link>
                 <div className="services--card-wrapper">
                     <div className="services--card">
                         <h2>
@@ -42,10 +50,12 @@ const Services = () => {
                             </li>
                         </ul>
                         <div className="services--card-cta">
-                            <button>
-                                Get started
-                            </button>
-                            <button>
+                            <Link to="https://calendly.com/iamjosephtunde/consult_tunde" className='services-cta'>
+                            Get started
+                            </Link>
+                            <button
+                            onClick={handleCopyEmail}
+                            >
                                 <FaCopy />
                                 <span>
                                 Email
@@ -80,10 +90,12 @@ const Services = () => {
                             </li>
                         </ul>
                         <div className="services--card-cta">
-                            <button>
-                                Get started
-                            </button>
-                            <button>
+                            <Link to="https://calendly.com/iamjosephtunde/consult_tunde" className='services-cta'>
+                            Get started
+                            </Link>
+                            <button
+                            onClick={handleCopyEmail}
+                            >
                                 <FaCopy />
                                 <span>
                                 Email
@@ -130,10 +142,12 @@ const Services = () => {
                             </li>
                         </ul>
                         <div className="services--card-cta">
-                            <button>
-                                Get started
-                            </button>
-                            <button>
+                            <Link to="https://calendly.com/iamjosephtunde/consult_tunde" className='services-cta'>
+                            Get started
+                            </Link>
+                            <button
+                            onClick={handleCopyEmail}
+                            >
                                 <FaCopy />
                                 <span>
                                 Email
@@ -168,10 +182,12 @@ const Services = () => {
                             </li>
                         </ul>
                         <div className="services--card-cta">
-                            <button>
+                            <Link to="https://calendly.com/iamjosephtunde/consult_tunde" className='services-cta'>
                                 Get started
-                            </button>
-                            <button>
+                            </Link>
+                            <button
+                            onClick={handleCopyEmail}
+                            >
                                 <FaCopy />
                                 <span>
                                 Email

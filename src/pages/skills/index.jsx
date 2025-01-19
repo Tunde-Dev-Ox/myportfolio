@@ -91,7 +91,7 @@ const Skills = () => {
                               alt="leadership icon"
                             />
                             <StackCard
-                                title="AI PM"
+                                title="AI Product Management"
                                 subtitle="AI"
                                 logo="/openai.svg"
                                 alt="AI Product Management logo"
@@ -210,12 +210,12 @@ const Skills = () => {
                                 logo='/react.svg'
                                 alt='React logo'
                             />
-                            <StackCard
+                            {/* <StackCard
                                 title='Python'
                                 subtitle='Backend'
                                 logo='/python.svg'
                                 alt='Python logo'
-                            />
+                            /> */}
                             <StackCard
                                 title="Javascript"
                                 subtitle="Frontend"
@@ -258,22 +258,22 @@ const Skills = () => {
                                 logo="/vite.svg"
                                 alt="vite"
                             />
-                            <StackCard
+                            {/* <StackCard
                                 title="AWS"
                                 subtitle="Cloud"
                                 logo="/aws-2.svg"
                                 alt="AWS logo"
-                            />
+                            /> */}
                             <StackCard
-                                title="DB management"
-                                subtitle="Database"
-                                logo="/mongodb-icon-1.svg"
+                                title="Typescript"
+                                subtitle="Frontend"
+                                logo="/typescript.svg"
                                 alt="Heroku logo"
                             />
                             <StackCard
-                                title="API knowledge"
+                                title="API testing"
                                 subtitle="API"
-                                logo="/aws-api-gateway.svg"
+                                logo="/postman.svg"
                                 alt="API knowledge logo"
                             />
                         </div>
@@ -284,4 +284,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+export default Skills;

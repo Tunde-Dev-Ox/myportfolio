@@ -4,7 +4,7 @@
     background-color: inherit;
     padding: 45px;
     max-width: 960px;
-    padding-top: 0;
+    padding-top: 2rem;
     @include breakpoint.breakpoint-custom-down(985) {
         padding: 0;
         padding-top: 5rem;
@@ -48,7 +48,7 @@
         flex-direction: column;
         text-decoration: none;
         &:hover {
-            background-color: #f3f3f3;
+            background-color: #818080;
             border-radius: 8px;
             h4, p, span {
                 color: #000;
@@ -96,7 +96,7 @@
     flex-direction: column;
     text-decoration: none;
     &:hover {
-        background-color: #f3f3f3;
+        background-color: #818080;
         border-radius: 8px;
 
         h4, p, span {

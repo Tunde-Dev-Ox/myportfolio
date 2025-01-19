@@ -7,7 +7,7 @@ import BlogCard from '../../components/blogCard'
 import useFetchBlogs from '../../hooks/useFetchBlogs'
 import StackCard from '../skills/StackCard'
 import { MdMiscellaneousServices } from 'react-icons/md'
-import { FaDiagramProject } from "react-icons/fa6";
+import { FaDiagramProject, FaDownload } from "react-icons/fa6";
 import MobileHeader from '../../components/mobileHeader'
 
 
@@ -30,12 +30,12 @@ const Home = () => {
                     <Link to="/about" className='home-cta'>
                         About
                     </Link>
-                    <button>
-                        <FaCopy />
+                    <a href='/Joseph-Tunde-Product-Manager.pdf' download='/Joseph-Tunde-Product-Manager.pdf'>
+                        <FaDownload />
                         <span>
-                            Email
+                            Resume
                         </span>
-                    </button>
+                    </a>
                 </div>
                 <div className="home__projects">
                     <h3 className="home__projects-header">
@@ -103,11 +103,11 @@ const Home = () => {
                                 logo='/wireframe.svg'
                                 alt='Wireframing logo'
                             />
-                            <StackCard 
-                                title='Notion'
-                                subtitle='Note taking'
-                                logo='/notion-2.svg'
-                                alt='Notion logo'
+                            <StackCard
+                                title='Product strategy'
+                                subtitle='Strategy'
+                                logo="/strategy-planning-pr-svgrepo-com.svg"
+                                alt='Product strategy logo'
                             />
                             <StackCard 
                                 title='Slack'
@@ -115,23 +115,23 @@ const Home = () => {
                                 logo='/slack.svg'
                                 alt='Slack logo'
                             />
-                            <StackCard 
-                                title='Figma'
-                                subtitle='Wireframing & Userflow'
-                                logo='/figma.svg'
-                                alt='Figma logo'
+                            <StackCard
+                                title='User research'
+                                subtitle='Research'
+                                logo='/user.svg'
+                                alt='User research logo'
                             />
                             <StackCard
-                                title='React'
-                                subtitle='Frontend'
-                                logo='/react.svg'
-                                alt='React logo'
+                                title='User Stories'
+                                subtitle='Requirement gathering'
+                                logo='/write.svg'
+                                alt='User Stories logo'
                             />
                             <StackCard
-                                title='Python'
-                                subtitle='Backend'
-                                logo='/python.svg'
-                                alt='Python logo'
+                                title="AI Product Management"
+                                subtitle="AI"
+                                logo="/openai.svg"
+                                alt="AI Product Management logo"
                             />
                             <StackCard
                                 title="Javascript"
