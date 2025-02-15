@@ -1,0 +1,60 @@
+@use '/src/assets/scss/breakpoint';
+
+.contact {
+    padding: 45px;
+    max-width: 960px;
+    padding-top: 1rem;
+    @include breakpoint.breakpoint-custom-down(985) {
+        padding: 0;
+        padding-top: 8rem;
+    }
+}
+
+.main__contact {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.main__contact_card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    @include breakpoint.breakpoint-custom-down(580) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.contact__card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+
+    svg:first-child {
+        font-size: 2rem;
+        color: rgb(99, 65, 223);
+    }
+
+    h3 {
+        font-size: 1.01rem;
+        font-weight: 300;
+        margin-left: 20px;
+    }
+
+    svg:last-child {
+        font-size: 1.5rem;
+        color: rgb(99, 65, 223);
+        margin-left: auto;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+        svg:last-child {
+            rotate: 40deg;
+        }
+    }
+}

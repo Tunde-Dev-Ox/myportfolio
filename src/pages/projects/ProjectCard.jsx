@@ -10,7 +10,7 @@ const ProjectCard = ({
     link
 }) => {
     return(
-    <Link to="" className="client--projectCard">
+    <Link to={link} className="client--projectCard">
         <img src={projectImage} alt={alt} />
         <div className="project-card--content">
             <div className="project-card--content--text">
@@ -21,13 +21,8 @@ const ProjectCard = ({
                     {projectDescription}
                 </p>
             </div>
-            <div className="project-time--btn">
-                <span>
-                    {projectYear}
-                </span>
             </div>
-            </div>
-        </Link>
+    </Link>
     )
 }
 

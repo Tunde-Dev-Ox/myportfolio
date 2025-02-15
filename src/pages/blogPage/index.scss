@@ -11,14 +11,14 @@
     margin: 0 auto;
     padding-top: 0;
     @include breakpoint.breakpoint-custom-down(985) {
-        padding-top: 4rem;
+        padding-top: 8rem;
     }
 }
 
 .blog_page__title {
-    font-size: clamp(1.8rem, 1.613rem + 0.52vw, 2rem);
+    font-size: clamp(1.75rem, 1.732rem + 0.09vw, 1.8rem);
     font-weight: 700;
-    color: #a3a2a2;
+    color: #393939;
     margin-bottom: 14px;
     line-height: 1.5;
 }
@@ -84,19 +84,16 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1rem;
+    font-size: .9rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #4a4a4a;
 
     img {
         width: 50px;
         height: 50px;
         border-radius: 50%;
         margin-right: 10px;
-    }
-
-    .author__name__text {
-        font-size: 1rem;
-        font-weight: 400;
-        color: #4a4a4a;
     }
 }
 

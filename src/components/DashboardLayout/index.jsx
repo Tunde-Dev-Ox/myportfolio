@@ -2,7 +2,6 @@ import Sidebar from "../sidebar";
 import './index.scss'
 import Footer from "../footer";
 import MobileHeader from "../mobileHeader";
-import MobileFooterMenu from "../mobileFooterMenu";
 
 const DashboardLayout = ({ children }) => {
     return(
@@ -13,7 +12,6 @@ const DashboardLayout = ({ children }) => {
                 <div className="main__content">
                     <MobileHeader />
                     {children}
-                    <MobileFooterMenu />
                 </div>
                 <Footer />
             </div>

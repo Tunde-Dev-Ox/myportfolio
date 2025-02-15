@@ -1,0 +1,115 @@
+@use '/src/assets/scss/breakpoint';
+
+
+.project-case-page {
+    padding: 45px;
+    max-width: 960px;
+    padding-top: 1rem;
+    @include breakpoint.breakpoint-custom-down(985) {
+        padding: 0;
+        padding-top: 8rem;
+    }
+}
+
+.project-case__top {
+    margin-bottom: 1.5rem;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #040404;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: #000;
+    }
+}
+
+.project-case-wrapper {
+    padding: 1rem;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-case-inner-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project-case-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    @include breakpoint.breakpoint-custom-down(768) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+}
+
+.back-to-project {
+    a {
+        font-size: .9rem;
+        color: #474747;
+    }
+}
+
+.project-case-category {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        list-style: none;
+        @include breakpoint.breakpoint-custom-down(580) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        li span {
+            font-size: .9rem;
+            color: #474747;
+        }
+    }
+}
+
+.project-case-mockup {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.project-case-contents {
+    h2 {
+        font-size: 1.05rem;
+        color: #040404;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: .9rem;
+        color: #474747;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+    }
+}

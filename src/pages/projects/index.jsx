@@ -2,97 +2,108 @@ import DashboardLayout from "../../components/DashboardLayout";
 import "./index.scss";
 import ProjectCard from "./ProjectCard";
 import { Link } from "react-router-dom";
+import ContactCard from "../../components/contactCard";
 
 
 const Projects = () => {
     return(
         <DashboardLayout>
             <div className="projects">
-                <h1 className="projects-header">
-                    Projects
-                </h1>
-                <p className="projects-subtitle">
-                    Building products that solve real-world problems.
+            <div className="home__top">
+                    <h1 className='home-title'>
+                        Projects
+                    </h1>
+                    <div className="availability">
+                        <div className="available">
+                            <div className="green_blink"></div>
+                            <span>
+                                Available for work
+                            </span>
+                        </div>
+                        <div className="contact-btn">
+                            <Link to="/contact">
+                                <span>
+                                    Contact Me
+                                </span>
+                            </Link>
+                        </div>
+                    </div>
+            </div>
+                <p className='home-about'>
+                    My projects are a true reflection of my passion for building products that solve real-world problems. I have worked on a variety of projects ranging from web applications to mobile apps.
                 </p>
                 <div className="client--projects-wrapper">
                     <ProjectCard 
-                        projectImage="https://framerusercontent.com/images/Jo0P4Jks8pQGWxCvweyGXEt0II.jpg?scale-down-to=1024"
+                        projectImage="/brooi.jpg"
                         projectTitle="Brooi"
-                        projectDescription="A vacation rental platform that connects property owners with travelers."
+                        projectDescription="A vacation rental platform that helps you find the best vacation rentals in your city."
                         alt="Brooi"
-                        projectYear="2023"
                         link="/projects/brooi"
                     />
                     <ProjectCard 
-                        projectImage="https://framerusercontent.com/images/Jo0P4Jks8pQGWxCvweyGXEt0II.jpg?scale-down-to=1024"
+                        projectImage="/lingroks.jpg"
+                        projectTitle="Lingroks"
+                        projectDescription="An AI powered translation and text-to-speech app that helps you translate and listen to text in different languages."
+                        alt="Brooi"
+                        link="/projects/lingroks"
+                    />
+                    {/* <ProjectCard 
+                        projectImage="/screenbox.jpg"
+                        projectTitle="ScreenBox"
+                        projectDescription="A screen recording app that helps you record your screen and share with friends."
+                        alt="ScreenBox"
+                        projectYear="2025"
+                        link="/projects/screenbox"
+                    />
+                    <ProjectCard 
+                        projectImage="/onbrela.jpg"
                         projectTitle="Onbrela"
-                        projectDescription="A video calling app that connects people all over the world."
+                        projectDescription="A video calling mobile app that helps you connect with friends and family."
                         alt="Onbrela"
                         projectYear="2024"
                         link="/projects/onbrela"
                     />
                     <ProjectCard 
-                        projectImage="https://framerusercontent.com/images/dczhH8rR13eIcGUyPwaMja0It4.jpg?scale-down-to=1024"
-                        projectTitle="Skoolboots"
-                        projectDescription="An online platform that connects students with tutors for 1-on-1 science tutoring."
-                        alt="Skoolboots"
+                        projectImage="/skoolboots.jpg"
+                        projectTitle="SkoolBoots"
+                        projectDescription="A platform that helps students find the best science tutors for one-on-one online tutoring."
+                        alt="SkoolBoots"
                         projectYear="2025"
                         link="/projects/skoolboots"
-                    />
-                    <ProjectCard 
-                        projectImage="https://framerusercontent.com/images/ZCGg3kQepodctXluTHFTfaiwlk.jpg?scale-down-to=1024"
-                        projectTitle="Lingroks"
-                        projectDescription="An AI powered text translator that helps you learn new languages built for Microsoft Imagine Cup."
-                        alt="Lingroks"
-                        projectYear="2025"
-                        link="/projects/lingroks"
-                    />
+                    /> */}
                 </div>
-                <h1 className="personal--projects-header">
-                    Personal Projects
+                <h1 className="home-title">
+                    Fun Projects
                 </h1>
-                <p className="projects-subtitle">
-                    Projects I&apos;ve worked on in my free time either for fun or to learn new technologies.
+                <p className="home-about">
+                    Projects I have worked on for fun and to learn new technologies.
                 </p>
                 <div className="client--projects-wrapper">
                     <ProjectCard 
-                        projectImage="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        projectTitle="PlayBumble"
-                        projectDescription="An application that notifies you when your favorite artist releases a new song or going on tour."
-                        alt="PlayBumble"
+                        projectImage="/coincurrent.jpg"
+                        projectTitle="Coincurrent"
+                        projectDescription="A currency converter app that helps you convert currencies in real-time."
+                        alt="Coincurrent"
                         projectYear="2025"
-                        link="/projects/playbumble"
+                        link='https://coincurrent.netlify.app'
                     />
                     <ProjectCard 
-                        projectImage="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        projectTitle="BuyBee"
-                        projectDescription="A fully functional e-commerce platform for buying and selling products."
-                        alt="BuyBee"
+                        projectImage="/lockerfy.jpg"
+                        projectTitle="Lockerfy"
+                        projectDescription="A password generator and manager that helps you keep your passwords secure."
+                        alt="lockerfy"
                         projectYear="2025"
-                        link="/projects/buybee"
-                    />
-                    <ProjectCard 
-                        projectImage="https://images.pexels.com/photos/35969/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        projectTitle="Quiziks"
-                        projectDescription="An AI powered quiz app that helps students prepare for exams."
-                        alt="Quiziks"
-                        projectYear="2025"
-                        link="/projects/quiziks"
-                    />
-                    <ProjectCard 
-                        projectImage="https://images.pexels.com/photos/22870044/pexels-photo-22870044/free-photo-of-scenic-view-on-suleymaniye-mosque.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-                        projectTitle="PlanTrip"
-                        projectDescription="A travel planning app that helps you plan your trips and share with friends."
-                        alt="PlanTrip"
-                        projectYear="2025"
-                        link="/projects/plantrip"
+                        link='https://lockerfy.netlify.app'
                     />
                 </div>
                 <div className="projects--see-more">
                     <p>
-                        Want to see more personal projects? Check out my 👉<Link to="https://images.pexels.com/photos/22870044/pexels-photo-22870044/free-photo-of-scenic-view-on-suleymaniye-mosque.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">Github</Link> 
+                        Want to see more personal projects? Check out my 👉<Link to="https://github.com/Tunde-Dev-Ox">
+                        Github
+                        </Link> 
                     </p>
                 </div>
+                <ContactCard />
             </div>
         </DashboardLayout>
     )

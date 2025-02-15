@@ -2,8 +2,14 @@ import React from "react";
 import "./index.scss";
 import { Link } from "react-router-dom";
 import DashboardLayout from "../../components/DashboardLayout";
-import { FaCopy } from "react-icons/fa";
+import ContactCard from "../../components/contactCard";
 import {Helmet} from 'react-helmet-async';
+import { HiOutlineAcademicCap } from "react-icons/hi";
+import { GiBlackBook } from "react-icons/gi";
+import { GoRocket } from "react-icons/go";
+import { LiaCertificateSolid } from "react-icons/lia";
+import '../home/index.scss';
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const About = () => {
     return (
@@ -13,50 +19,173 @@ const About = () => {
                 Joseph Tunde - About
             </title>
         </Helmet>
-        <div className="about">
-            <h1 className="about-header">About Tunde</h1>
-            <div className="about_top__wrapper">
-                <p className="about-subtitle">
-                    From Nigeria&rsquo;s finest University, Joseph Tunde is a product manager who is passionate about product and technology. With three years of experience in product management, he is always looking to learn new things and build usable products.
-                </p>
-                <figure>
-                     <img src="/tunde.png" alt="Tunde" />
-               </figure>
-            </div>
-            <div className="about--card-wrapper">
-               <div className="about-content">
-                    <p>
-                        Joseph began his career as a self-taught software developer building web applications with HTML, CSS, and JavaScript. He later transitioned into product management working immediately with Brooi, a startup that connect property owners with tenants. He has since worked with several teams and clients to build products that solve real-world problems.
-                    </p>
-                    <br />
-                    <p>
-                       Still a student at the University of Lagos, Joseph is passionate about building products that solve real-world problems. He is currently working as a co-founder on a platform that connects students with tutors for 1-on-1 science tutoring.
-                    </p>
-                    <br />
-                    <p>
-                        His attention to detail, empathy for users and team members, and ability to communicate effectively has helped him build products that users love. He is currently open to new opportunities and is looking to work with teams that are passionate about building products that solve real-world problems.
-                    </p>
-                    <br />
-                    <p>
-                        When he is not working, Joseph enjoys playing video games, reading, composing music and streaming Spotify. He is also a huge fan of Barcelona and enjoys watching football matches.
-                    </p>
-                    <br />
-                    <p>
-                        Choosing to work with Joseph means choosing to work with a team player who is passionate about excellence and success. He is always looking to learn new things and is open to feedback that will help him grow.
-                    </p>
-                    <div className="home-cta--wrapper about-cta">
-                    <Link to="/services" className='home-cta'>
-                        What I do
-                    </Link>
-                    <button>
-                        <FaCopy />
-                        <span>
-                            Email
-                        </span>
-                    </button>
+        <div className="about-page">
+        <div className="home__top">
+                    <h1 className='home-title'>
+                        About Me
+                    </h1>
+                    <div className="availability">
+                        <div className="available">
+                            <div className="green_blink"></div>
+                            <span>
+                                Available for work
+                            </span>
+                        </div>
+                        <div className="contact-btn">
+                            <Link to="/contact">
+                                <span>
+                                    Contact Me
+                                </span>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
-               </div>
-            </div>
+                <p className='home-about'>
+                    My journey has been shaped by my passion for building products that drives impact and solves user needs. I have worked on a variety of projects ranging from web applications to mobile apps. I am a product manager with a technical knowledge and a knack for building products that users love.
+                </p>
+                  <div className="about__section_wrapper">
+                                        <div className="home_about__section_card">
+                                            <HiOutlineAcademicCap />
+                                            <h4>
+                                                Academic Education
+                                            </h4>
+                                            <ul>
+                                                <li>
+                                                University of Lagos – B.A in Creative Arts (Music Composition)<br /><br/>
+                                                2020 - 2025
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="home_about__section_card">
+                                            <GiBlackBook />
+                                            <h4>
+                                                Non-Formal Education
+                                            </h4>
+                                            <ul>
+                                            <li>
+                                                University of Alberta - Software product management (Coursera)<br /><br/>
+                                                2023<br /><br/>
+                                                <a href="https://coursera.org/share/3c07f0c2133d85e778013d95c05420bb">
+                                                    See Certificate
+                                                </a>
+                                                </li>
+                                                <li>
+                                                Scrum Master Certification (Coursera)<br /><br/>
+                                                2023<br /><br/>
+                                                <a href="https://coursera.org/share/e388bd12ce23fd10d5a38b01d8e340c5">
+                                                    See Certificate
+                                                </a>
+                                                </li>
+                                                {/* <li>
+                                                Python complete course - NitHub (University of Lagos)<br /><br/>
+                                                2025
+                                                </li> */}
+                                                <li>
+                                                React Deep Dive (Educative)<br /><br/>
+                                                2024
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="home_about__section_card">
+                                            <GoRocket />
+                                            <h4>
+                                                Experience
+                                            </h4>
+                                            <ul>
+                                                <li>
+                                                Alvonant - A tech outsourcing company that connects businesses with developers.<br /><br/>
+                                                Junior Product Manager<br /><br/>
+                                                2024<br /><br/>
+                                                </li>
+                                                <li>
+                                                Brooi - A vacation rental platform that connects property owners with travelers.<br /><br/>
+                                                Product Manager<br /><br/>
+                                                2022 - 2025<br /><br/>
+                                                <a href="https://www.brooi.com">
+                                                    See Project
+                                                </a>
+                                                </li>
+                                                <li>
+                                                Lingroks - An AI powered text and audio translator that helps you learn new languages.<br /><br/>
+                                                Technical Product Manager<br /><br/>
+                                                2024 - 2025<br /><br/>
+                                                <a href="https://www.lingroks.live">
+                                                    See Project
+                                                </a>
+                                                </li>
+                                                {/* <li>
+                                                Nithub - A tech hub where students can build to become software engineers.<br /><br/>
+                                                Frontend Developer (6 months programme)<br /><br/>
+                                                2025<br /><br/>
+                                                </li> */}
+                                            </ul>
+                                        </div>
+                                        <div className="home_about__section_card">
+                                            <LiaCertificateSolid />
+                                            <h4>
+                                                Certifications
+                                            </h4>
+                                            <ul>
+                                               <li>
+                                                Certified Associate in Project Management (CAPM) - PMI -- In view<br /><br/>
+                                                2025
+                                               </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                  <div className="home_stacks">
+                                    <h3 className="home_stacks-header">
+                                        Stacks
+                                    </h3>
+                                    <div className="home__stacks_wrapper">
+                                        <div className="home__stack_card">
+                                            <img src="/ClickUp_idfty-HNVU_0.svg" alt="clickup" />
+                                            <h4>
+                                                ClickUp
+                                            </h4>
+                                        </div>
+                                        <div className="home__stack_card">
+                                            <img src="/trello.svg" alt="trello" />
+                                            <h4>
+                                                Trello
+                                            </h4>
+                                        </div>
+                                        <div className="home__stack_card">
+                                            <img src="/notion-2.svg" alt="notion" />
+                                            <h4>
+                                                Notion
+                                            </h4>
+                                        </div>
+                                        <div className="home__stack_card">
+                                            <img src="/postman.svg" alt="postman" />
+                                            <h4>
+                                                API Testing
+                                            </h4>
+                                        </div>
+                                        <div className="home__stack_card">
+                                            <img src="/github.svg" alt="github" />
+                                            <h4>
+                                                Github
+                                            </h4>
+                                        </div>
+                                        <div className="home__stack_card">
+                                            <img src="/user.svg" alt="user research" />
+                                            <h4>
+                                                User research
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div className="see-more">
+                                        <Link to="/stack">
+                                            <span>
+                                                View full stack
+                                            </span>
+                                            <IoIosArrowRoundForward />
+                                        </Link>
+                                    </div>
+                                </div>
+                <ContactCard />
         </div>
         </DashboardLayout>
     );

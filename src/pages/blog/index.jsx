@@ -1,15 +1,35 @@
 import DashboardLayout from "../../components/DashboardLayout";
 import "./index.scss";
-// import styles from './module.index.scss'
 import { Link } from "react-router-dom";
 import BlogCard from "../../components/blogCard";
 import SubscribeCard from "../../components/subscribeCard";
 import useFetchBlogs from '../../hooks/useFetchBlogs'
 import {Helmet} from 'react-helmet-async';
+import ContactCard from "../../components/contactCard";
+import { useEffect, useState } from "react";
+import { stringify, parse } from "flatted";
 
 
 const Blog = () => {
+    const [cachedBlogs, setCachedBlogs] = useState(() => {
+        const storedBlogs = localStorage.getItem("blogsPreview");
+        return storedBlogs ? JSON.parse(storedBlogs) : null;
+    });
     const {blogsPreview, loading, error} = useFetchBlogs({ contentType: "blogPage" });
+    useEffect(() => {
+        if (blogsPreview.length > 0) {
+            localStorage.setItem("blogsPreview", stringify(blogsPreview));
+            setCachedBlogs(blogsPreview);
+        }
+    }, [blogsPreview]);
+    
+    useEffect(() => {
+        const storedBlogs = localStorage.getItem("blogsPreview");
+        if (storedBlogs) {
+            setCachedBlogs(parse(storedBlogs));
+        }
+    }, []);
+    const blogs = cachedBlogs || blogsPreview;
     <DashboardLayout>
         if (loading) return <p>Loading</p>
         if (error) return <p>Error occured...</p>
@@ -22,27 +42,46 @@ const Blog = () => {
             </title>
         </Helmet>
             <div className="blog">
-                <h1 className="blog__header">Blog</h1>
-                <p className="blog__subtitle">
-                    Every wednesdays and sundays, I post articles on product management, project management, software development, startup, my journey and more.
+            <div className="home__top">
+                    <h1 className='home-title'>
+                        My writings📝
+                    </h1>
+                    <div className="availability">
+                        <div className="available">
+                            <div className="green_blink"></div>
+                            <span>
+                                Available for work
+                            </span>
+                        </div>
+                        <div className="contact-btn">
+                            <Link to="/contact">
+                                <span>
+                                    Contact Me
+                                </span>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <p className='home-about'>
+                    I write about tech, programming, products, and life in general. I share my thoughts, experiences, and knowledge on these topics. I hope you find them helpful and interesting. Enjoy!🚀
                 </p>
                 {
                     blogsPreview.length > 0 ? (
                         <>
                             <div className="blog__top-card-wrapper">
                                 <Link 
-                                to={`/blog/${blogsPreview[0].fields.slug}`}
+                                to={`/blog/${blogs[0].fields.slug}`}
                                 className="blog__top-card">
                                     <img 
-                                    src={`${blogsPreview[0].fields.image.fields.file.url}?q=35`}
-                                    alt={blogsPreview[0].fields.image.fields.title || ""}
+                                    src={`${blogs[0].fields.image.fields.file.url}?q=35`}
+                                    alt={blogs[0].fields.image.fields.title || ""}
                                     />
                                     <div className="blog__top-card-content">
                                         <span>
-                                            {blogsPreview[0].fields.date}
+                                            {blogs[0].fields.date}
                                         </span>
                                         <h3>
-                                            {blogsPreview[0].fields.title}
+                                            {blogs[0].fields.title}
                                         </h3>
                                     </div>
                                 </Link>
@@ -84,7 +123,8 @@ const Blog = () => {
                     <button className="blog__pagination-button">9</button>
                     <button className="blog__pagination-button">10</button>
                 </div> */}
-                <SubscribeCard />
+                {/* <SubscribeCard /> */}
+                <ContactCard />
             </div>
         </DashboardLayout>
     );

@@ -18,7 +18,10 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     flex-direction: column;
-    background-color: rgb(11, 11, 20);
+    background: url('/public/abstract-039.svg');
+    background-size: cover;
+    background-size: 10px;
+    background-position: center;
     padding: 40px 20px;
     border-radius: 8px;
     
@@ -26,7 +29,7 @@
         h3 {
             font-size: 2rem;
             font-weight: 700;
-            color: #f1eded;
+            color: #000000;
             margin-bottom: 14px;
             line-height: 1.5;
             max-width: 600px;

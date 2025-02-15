@@ -4,7 +4,9 @@ import './index.scss'
 const BlogCard = ({ title, date, tag, img, link, alt }) => {
     return(
         <Link to ={link} className="all_blogs__card">
-            <img src={img} alt={alt} />
+            <figure>
+                <img src={img} alt={alt} />
+            </figure>
             <div className="all_blogs__card_details">
                 <span className="all_blogs__card_tag">
                     {tag}

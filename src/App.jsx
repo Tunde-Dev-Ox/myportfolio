@@ -1,47 +1,37 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
-import Skills from './pages/skills'
-import Services from './pages/services'
+import Stack from './pages/stack'
 import Projects from './pages/projects'
 import About from './pages/about'
 import Blog from './pages/blog'
-import Certifications from './pages/certifications'
-import SplashScreen from './components/splashscreen'
+import Contact from './pages/contact'
 import BlogPage from './pages/blogPage'
-import { useState } from 'react'
 import { HelmetProvider } from 'react-helmet-async'
 import ScrollToTop from './utils/ScrollToTop'
+import Lingroks from './pages/projects/lingroks'
+import Brooi from './pages/projects/brooi'
 
 
 function App() {
-  const [showSplash, setShowSplash] = useState(true);
-
-    const handleSplashFinish = () => {
-        setShowSplash(false);
-    };
 
   return (
     <>
-      
-      {showSplash ? (
-                <SplashScreen onFinish={handleSplashFinish} />
-            ) : (
-          <HelmetProvider>
-            <BrowserRouter>
-            <ScrollToTop />
+      <HelmetProvider>
+      <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path='/skills' element={<Skills />} />
-          <Route path='/services' element={<Services />} />
+          <Route path='/stack' element={<Stack />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/about' element={<About />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/blog/:slug' element={<BlogPage />} />
-          <Route path='/certifications' element={<Certifications />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/projects/lingroks' element={<Lingroks />} />
+          <Route path='/projects/brooi' element={<Brooi />} />
         </Routes>
       </BrowserRouter>
       </HelmetProvider>
-      )}
     </>
   )
 }

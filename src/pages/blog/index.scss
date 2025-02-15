@@ -1,42 +1,20 @@
 @use '/src/assets/scss/breakpoint';
 
 .blog {
-    background-color: inherit;
     padding: 45px;
-    max-width: 1100px;  
-    width: 100%;
-    padding-top: 2rem;
+    max-width: 960px;
+    padding-top: 1rem;
     @include breakpoint.breakpoint-custom-down(985) {
         padding: 0;
-        padding-top: 5rem;
+        padding-top: 8rem;
     }
 }
 
-.blog__header {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 14px;
-    line-height: 1.5;
-}
-
-.blog__subtitle {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    line-height: 1.5;
-    font-weight: 500;
-    max-width: 700px;
-    background: #82877E;
-    background: linear-gradient(to right, #82877E 9%, #C2C8FF 50%, #CFCFCF 75%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .blog__top-card-wrapper {
     width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 
     .blog__top-card {
         display: flex;
@@ -85,7 +63,7 @@
 
             h3 {
                 font-size: 1.2rem;
-                font-weight: 700;
+                font-weight: 500;
                 color: #fff;
                 margin-bottom: 10px;
             }
@@ -108,39 +86,12 @@
     grid-row-gap: 60px;
     padding: 20px;
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
     align-items: baseline;
     @include breakpoint.breakpoint-custom-down(768) {
         grid-template-columns: repeat(1, 1fr);
     }
+    background-color: #fff;
+    border-radius: 8px;
 }
 
-.blog__pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
 
-    button {
-        cursor: pointer;
-        display: inline-block;
-        margin: 0px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        width: auto;
-        touch-action: manipulation;
-        font-size: 16px;
-        font-weight: 500;
-        border-radius: 100%;
-        outline: none;
-        padding: 10px;
-        color: #5c5b5b;
-        transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
-        -webkit-tap-highlight-color: transparent;
-        background: none;
-        border: none;
-    }
-}

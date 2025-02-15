@@ -3,9 +3,12 @@
 @use '/src/assets/scss/breakpoint';
 
 .footer {
-    background-color: #0d0d0d;
+    // background-color: #0d0d0d;
     height: auto;
     width: 100%;
+    @include breakpoint.breakpoint-custom-down(580) {
+        margin-top: 2rem;
+    }
 }
 
 .footer__wrapper {
@@ -21,59 +24,10 @@
     padding: 10px;
 }
 
-.footer__top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    height: auto;
-    width: 100%;
-    align-items: baseline;
-    position: relative;
-    padding: 10px;
-    @include breakpoint.breakpoint-custom-down(768) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    ul {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        flex-direction: column;
-        width: 30%;
-
-        li {
-            margin-bottom: 10px;
-
-
-            span {
-                font-size: 1rem;
-                font-weight: 600;
-                color: rgb(209, 207, 207);
-            }
-
-            a {
-                font-size: .925rem;
-                font-weight: 400;
-                color: #817e7e;
-                text-decoration: none;
-                transition: color 0.3s ease;
-
-                &:hover {
-                    color: variables.$text;
-                }
-            }
-        }
-    }
-}
-
 .empty--div {
     width: 100%;
-    height: 1px;
-    background-color: rgb(101,101,101);
+    height: .6px;
+    background-color: rgb(201, 201, 201);
     margin: 10px 0;
 }
 
@@ -116,27 +70,27 @@
         align-items: flex-start;
     }
     p {
-        font-size: .925rem;
+        font-size: .9rem;
         font-weight: 400;
         color: #817e7e;
         margin-bottom: 10px;
     }
 
     span {
-        font-size: .925rem;
+        font-size: .9rem;
         font-weight: 400;
         color: #817e7e;
         margin-bottom: 10px;
 
         a {
-            font-size: .925rem;
+            font-size: .9rem;
             font-weight: 400;
-            color: #d6d4d4;
+            color: #060606;
             text-decoration: none;
             transition: color 0.3s ease;
 
             &:hover {
-                color: #fff;
+                color: #474646;
             }
         }
     }

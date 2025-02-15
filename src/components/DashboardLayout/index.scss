@@ -12,12 +12,12 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: "main";
+        grid-template-columns: 1fr;
     }
 }
 
 .main__content-wrapper {
     grid-area: main;
-    background-color: rgb(0, 0, 0);
     height: auto;
     width: 100%;
     position: relative;
@@ -28,6 +28,8 @@
         width: 100%;
         position: relative;
         padding: 10px;
-        background-color: #000;
+    }
+    @include breakpoint.breakpoint-custom-down(985) {
+        padding: 0 12px;
     }
 }

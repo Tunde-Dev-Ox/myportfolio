@@ -9,6 +9,8 @@ import BlogCard from '../../components/blogCard';
 import SubscribeCard from '../../components/subscribeCard';
 import {BLOCKS} from '@contentful/rich-text-types';
 import {Helmet} from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import ContactCard from '../../components/contactCard';
 
 const BlogPage = () => {
     const { slug } = useParams();
@@ -23,25 +25,25 @@ const BlogPage = () => {
             )),
         renderNode: {
              [BLOCKS.PARAGRAPH]: (node, children) => (
-            <p style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '18px' }}>{children}</p>
+            <p style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '18px', color: 'rgb(77, 77, 77)' }}>{children}</p>
         ),
         [BLOCKS.HEADING_1]: (node, children) => (
-            <h1 style={{ fontSize: '28px', fontWeight: 'bold', marginBottom: '25px' }}>{children}</h1>
+            <h1 style={{ fontSize: '28px', fontWeight: 'bold', marginBottom: '25px', color: '#000' }}>{children}</h1>
         ),
         [BLOCKS.HEADING_2]: (node, children) => (
-            <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h2>
+            <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h2>
         ),
         [BLOCKS.HEADING_3]: (node, children) => (
-            <h3 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h3>
+            <h3 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h3>
         ),
         [BLOCKS.HEADING_4]: (node, children) => (
-            <h4 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h4>
+            <h4 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h4>
         ),
         [BLOCKS.HEADING_5]: (node, children) => (
-            <h5 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h5>
+            <h5 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h5>
         ),
         [BLOCKS.HEADING_6]: (node, children) => (
-            <h6 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px' }}>{children}</h6>
+            <h6 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h6>
         ),
         }
     }
@@ -109,14 +111,14 @@ const BlogPage = () => {
                     />
                 </div>
                 <div className="author__details">
-                    <div className="author__name">
+                    <Link to="/contact" className="author__name">
                         <img 
                         src={`${blog.fields.avatar.fields.file.url}?q=35`} 
                         alt="" />
                         <span className='author__name_text'>
                             {blog.fields.authorName}
                         </span>
-                    </div>
+                    </Link>
                     <span className='blog_page__tag'>
                         {blog.fields.tag}
                     </span>
@@ -143,7 +145,8 @@ const BlogPage = () => {
                         ))}
                     </div>
                 </div>
-                <SubscribeCard />
+                {/* <SubscribeCard /> */}
+                <ContactCard />
             </div>
         </DashboardLayout>
     );
