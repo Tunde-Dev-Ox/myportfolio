@@ -112,16 +112,16 @@ const Home = () => {
                                 Non-Formal Education
                             </h4>
                             <ul>
-                                {/* <li>
-                                Python complete course - NitHub (University of Lagos)<br /><br/>
-                                2025
-                                </li> */}
                                 <li>
                                     University of Alberta - Software product management (Coursera)<br /><br/>
                                     2023<br /><br/>
                                     <a href="https://coursera.org/share/3c07f0c2133d85e778013d95c05420bb">
                                         See Certificate
                                     </a>
+                                </li>
+                                <li>
+                                    Python complete course - NitHub (University of Lagos)<br /><br/>
+                                    2025
                                 </li>
                             </ul>
                         </div>

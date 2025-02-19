@@ -76,10 +76,10 @@ const About = () => {
                                                     See Certificate
                                                 </a>
                                                 </li>
-                                                {/* <li>
-                                                Python complete course - NitHub (University of Lagos)<br /><br/>
-                                                2025
-                                                </li> */}
+                                                <li>
+                                                    Python complete course - NitHub (University of Lagos)<br /><br/>
+                                                    2025
+                                                </li>
                                                 <li>
                                                 React Deep Dive (Educative)<br /><br/>
                                                 2024
