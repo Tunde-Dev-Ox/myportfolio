@@ -43,7 +43,7 @@ const BlogPage = () => {
             <h5 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h5>
         ),
         [BLOCKS.HEADING_6]: (node, children) => (
-            <h6 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h6>
+            <h6 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h6>
         ),
         }
     }
