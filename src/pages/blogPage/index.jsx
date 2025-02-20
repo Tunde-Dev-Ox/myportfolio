@@ -6,7 +6,7 @@ import client from '../../contentful';
 import { useEffect, useState } from 'react';
 import {documentToReactComponents} from '@contentful/rich-text-react-renderer';
 import BlogCard from '../../components/blogCard';
-import SubscribeCard from '../../components/subscribeCard';
+// import SubscribeCard from '../../components/subscribeCard';
 import {BLOCKS} from '@contentful/rich-text-types';
 import {Helmet} from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -88,6 +88,9 @@ const BlogPage = () => {
                 <meta property="og:description" content={blog.fields.description} />
                 <meta property="og:image" content={`https:${blog.fields.image.fields.file.url}`} />
                 <meta property="og:image:secure_url" content={`https:${blog.fields.image.fields.file.url}`} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:image:alt" content={blog.fields.image.fields.title} />
                 <meta property="og:url" content={`https://www.josephtunde.me/blog/${blog.fields.slug}`} />
                 <meta property="og:type" content="article" />
                 <meta property="og:locale" content="en_US" />
@@ -99,7 +102,9 @@ const BlogPage = () => {
                 <meta name="twitter:creator" content="@__jot" />
                 <meta name="twitter:title" content={blog.fields.title} />
                 <meta name="twitter:description" content={blog.fields.description} />
-                <meta name="twitter:image" content={`https:${blog.fields.image.fields.file.url}`} />
+                <meta name="twitter:image" content={`https:${blog.fields.image.fields.file.url}
+                `} />
+                <meta name="twitter:image:alt" content={blog.fields.image.fields.title} />
             </Helmet>
 
             <div className="blog_page">
