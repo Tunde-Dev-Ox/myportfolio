@@ -79,46 +79,34 @@ const BlogPage = () => {
     return (
         <DashboardLayout>
             <Helmet>
-                <title>{blog.fields.title}</title>
-                <meta name="description" content={blog.fields.description} />
-                <meta name="keywords" content={blog.fields.keywords} />
-    
-                {/* Open Graph / Facebook */}
-                <meta property="og:title" content={blog.fields.title} />
-                <meta property="og:description" content={blog.fields.description} />
-                <meta property="og:image" content={`https:${blog.fields.image.fields.file.url}`} />
-                <meta property="og:image:secure_url" content={`https:${blog.fields.image.fields.file.url}`} />
-                <meta property="og:image:width" content="1200" />
-                <meta property="og:image:height" content="630" />
-                <meta property="og:image:alt" content={blog.fields.image.fields.title} />
-                <meta property="og:url" content={`https://www.josephtunde.me/blog/${blog.fields.slug}`} />
-                <meta property="og:type" content="article" />
-                <meta property="og:locale" content="en_US" />
-                <meta property="og:site_name" content="josephtunde" />
+  {/* Basic Meta Tags */}
+  <title>{blog.fields.title}</title>
+  <meta name="description" content={blog.fields.description} />
 
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:site" content="@__jot" />
-                <meta name="twitter:creator" content="@__jot" />
-                <meta name="twitter:title" content={blog.fields.title} />
-                <meta name="twitter:description" content={blog.fields.description} />
-                <meta name="twitter:image" content={`https:${blog.fields.image.fields.file.url}
-                `} />
-                <meta name="twitter:image:alt" content={blog.fields.image.fields.title} />
+  {/* Open Graph (Facebook, LinkedIn) */}
+  <meta property="og:title" content={blog.fields.title} />
+  <meta property="og:description" content={blog.fields.description} />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content={`https://josephtunde.me/blog/${blog.fields.slug}`} />
+  {blog.fields.image && blog.fields.image.fields && (
+    <meta property="og:image" content={`https:${blog.fields.image.fields.file.url}`} />
+  )}
+  <meta property="og:site_name" content="Joseph Tunde" />
 
-                {/*Linkedin */}
-                <meta property="og:title" content={blog.fields.title} />
-                <meta property="og:description" content={blog.fields.description} />
-                <meta property="og:image" content={`https:${blog.fields.image.fields.file.url}`} />
-                <meta property="og:image:secure_url" content={`https:${blog.fields.image.fields.file.url}`} />
-                <meta property="og:image:width" content="1200" />
-                <meta property="og:image:height" content="630" />
-                <meta property="og:image:alt" content={blog.fields.image.fields.title} />
-                <meta property="og:url" content={`https://www.josephtunde.me/blog/${blog.fields.slug}`} />
-                <meta property="og:type" content="article" />
-                <meta property="og:locale" content="en_US" />
-                <meta property="og:site_name" content="josephtunde" />
-            </Helmet>
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={blog.fields.title} />
+  <meta name="twitter:description" content={blog.fields.description} />
+  {blog.fields.image && blog.fields.image.fields && (
+    <meta name="twitter:image" content={`https:${blog.fields.image.fields.file.url}`} />
+  )}
+  <meta name="twitter:site" content="@__jot" />
+  <meta name="twitter:creator" content="@__jot" />
+
+  {/* LinkedIn */}
+  <meta property="article:author" content="https://www.linkedin.com/in/josephtunde/" />
+    <meta property="article:published_time" content={blog.fields.date} />
+</Helmet>
 
             <div className="blog_page">
                 <h1 className='blog_page__title'>
