@@ -105,6 +105,19 @@ const BlogPage = () => {
                 <meta name="twitter:image" content={`https:${blog.fields.image.fields.file.url}
                 `} />
                 <meta name="twitter:image:alt" content={blog.fields.image.fields.title} />
+
+                {/*Linkedin */}
+                <meta property="og:title" content={blog.fields.title} />
+                <meta property="og:description" content={blog.fields.description} />
+                <meta property="og:image" content={`https:${blog.fields.image.fields.file.url}`} />
+                <meta property="og:image:secure_url" content={`https:${blog.fields.image.fields.file.url}`} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:image:alt" content={blog.fields.image.fields.title} />
+                <meta property="og:url" content={`https://www.josephtunde.me/blog/${blog.fields.slug}`} />
+                <meta property="og:type" content="article" />
+                <meta property="og:locale" content="en_US" />
+                <meta property="og:site_name" content="josephtunde" />
             </Helmet>
 
             <div className="blog_page">
