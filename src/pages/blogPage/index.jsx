@@ -82,16 +82,26 @@ const BlogPage = () => {
                 <title>{blog.fields.title}</title>
                 <meta name="description" content={blog.fields.description} />
                 <meta name="keywords" content={blog.fields.keywords} />
+    
+                {/* Open Graph / Facebook */}
                 <meta property="og:title" content={blog.fields.title} />
                 <meta property="og:description" content={blog.fields.description} />
-                <meta property="og:image" content={blog.fields.image.fields.file.url} />
-                <meta property="og:url" content={`https://yourwebsite.com/blog/${blog.fields.slug}`} />
+                <meta property="og:image" content={`https:${blog.fields.image.fields.file.url}`} />
+                <meta property="og:image:secure_url" content={`https:${blog.fields.image.fields.file.url}`} />
+                <meta property="og:url" content={`https://www.josephtunde.me/blog/${blog.fields.slug}`} />
                 <meta property="og:type" content="article" />
                 <meta property="og:locale" content="en_US" />
-                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:site" content="@yourwebsite" />
-                <meta name="twitter:creator" content="@yourwebsite" />
+                <meta property="og:site_name" content="josephtunde" />
+
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@__jot" />
+                <meta name="twitter:creator" content="@__jot" />
+                <meta name="twitter:title" content={blog.fields.title} />
+                <meta name="twitter:description" content={blog.fields.description} />
+                <meta name="twitter:image" content={`https:${blog.fields.image.fields.file.url}`} />
             </Helmet>
+
             <div className="blog_page">
                 <h1 className='blog_page__title'>
                     {blog.fields.title}
