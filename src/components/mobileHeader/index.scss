@@ -85,6 +85,14 @@
     }
 }
 
+.open .line1 {
+    transform: translateY(7px) rotate(50deg);
+}
+
+.open .line2 {
+    transform: translateY(-2px) rotate(-45deg);
+}
+
 
 //dropdown
 .mobile_nav__dropdown_wrapper {

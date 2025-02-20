@@ -79,11 +79,11 @@ const MobileHeader = () => {
                     </div>
                 </Link>
                 <div 
-                to="/" 
-                className="mobile__hamburger"
-                onClick={handleOpen}>
-                    <div className="hamburger__line"></div>
-                    <div className="hamburger__line"></div>
+                    className={`mobile__hamburger ${open ? "open" : ""}`} 
+                    onClick={handleOpen}
+                >
+                    <div className={`hamburger__line ${open ? "line1" : ""}`}></div>
+                    <div className={`hamburger__line ${open ? "line2" : ""}`}></div>
                 </div>
                 <div className={open ? 'mobile_menu__active' : 'mobile_nav__dropdown_wrapper'}>
                 <div className="mobile_nav__dropdown">
