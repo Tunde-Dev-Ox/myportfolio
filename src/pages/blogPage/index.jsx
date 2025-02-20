@@ -34,16 +34,16 @@ const BlogPage = () => {
             <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h2>
         ),
         [BLOCKS.HEADING_3]: (node, children) => (
-            <h3 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h3>
+            <h3 style={{ fontSize: '22px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h3>
         ),
         [BLOCKS.HEADING_4]: (node, children) => (
-            <h4 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h4>
+            <h4 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h4>
         ),
         [BLOCKS.HEADING_5]: (node, children) => (
-            <h5 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h5>
+            <h5 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h5>
         ),
         [BLOCKS.HEADING_6]: (node, children) => (
-            <h6 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h6>
+            <h6 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h6>
         ),
         }
     }
