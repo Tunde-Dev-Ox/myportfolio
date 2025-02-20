@@ -33,6 +33,9 @@
     @include breakpoint.breakpoint-custom-down(768) {
         grid-template-columns: repeat(1, 1fr);
     }
+    @include breakpoint.breakpoint-custom-down(580) {
+        padding: 0;
+    }
 }
 
 .client--projectCard {
@@ -43,9 +46,6 @@
     flex-direction: column;
     border-radius: 8px;
     text-decoration: none;
-    @include breakpoint.breakpoint-custom-down(580) {
-        padding: 0;
-    }
 
     img {
         width: 100%;
