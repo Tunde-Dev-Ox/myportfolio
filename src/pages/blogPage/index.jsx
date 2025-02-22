@@ -8,7 +8,7 @@ import {documentToReactComponents} from '@contentful/rich-text-react-renderer';
 import BlogCard from '../../components/blogCard';
 // import SubscribeCard from '../../components/subscribeCard';
 import {BLOCKS} from '@contentful/rich-text-types';
-import {Helmet} from 'react-helmet-async';
+import Seo from '../../components/seo';
 import { Link } from 'react-router-dom';
 import ContactCard from '../../components/contactCard';
 
@@ -78,36 +78,14 @@ const BlogPage = () => {
     }
     return (
         <DashboardLayout>
-            <Helmet>
-  {/* Basic Meta Tags */}
-  <title>{blog.fields.title}</title>
-  <meta name="description" content={blog.fields.description} />
-
-  {/* Open Graph (Facebook, LinkedIn) */}
-  <meta property="og:title" content={blog.fields.title} />
-  <meta property="og:description" content={blog.fields.description} />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content={`https://josephtunde.me/blog/${blog.fields.slug}`} />
-  {blog.fields.image && blog.fields.image.fields && (
-    <meta property="og:image" content={`https:${blog.fields.image.fields.file.url}`} />
-  )}
-  <meta property="og:site_name" content="Joseph Tunde" />
-
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={blog.fields.title} />
-  <meta name="twitter:description" content={blog.fields.description} />
-  {blog.fields.image && blog.fields.image.fields && (
-    <meta name="twitter:image" content={`https:${blog.fields.image.fields.file.url}`} />
-  )}
-  <meta name="twitter:site" content="@__jot" />
-  <meta name="twitter:creator" content="@__jot" />
-
-  {/* LinkedIn */}
-  <meta property="article:author" content="https://www.linkedin.com/in/josephtunde/" />
-    <meta property="article:published_time" content={blog.fields.date} />
-</Helmet>
-
+            <Seo
+                title={blog.fields.title}
+                description={blog.fields.description}
+                image={blog.fields.image.fields.file.url}
+                article
+                slug={`/blog/${blog.fields.slug}`}
+                publishedTime={blog.fields.date}
+            />
             <div className="blog_page">
                 <h1 className='blog_page__title'>
                     {blog.fields.title}
