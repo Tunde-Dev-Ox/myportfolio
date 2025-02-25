@@ -20,7 +20,7 @@ const Home = () => {
     const [showMore, setShowMore] = useState(false);
     const profession = [
         {
-            role: "Technical PM",
+            role: "Product Manager",
             description: "Ample experience working with cross-functional teams to deliver products that meet the needs of users and businesses.",
             img: "/product__management.svg",
         },
@@ -30,8 +30,8 @@ const Home = () => {
             img: "/writing-hand-medium-skin.svg",
         },
         {
-            role: "Project Manager",
-            description: "Experience managing projects from ideation to launch, ensuring that projects are delivered on time and within budget.",
+            role: "Software Dev",
+            description: "Experience working with developers and building software using frontend technologies and python.",
             img: "/project-new.svg",
         }
     ]
