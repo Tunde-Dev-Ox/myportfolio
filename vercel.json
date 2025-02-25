@@ -10,5 +10,8 @@
         "use": "@vercel/next"
       }
     ],
-    "framework": "nextjs"
+    "framework": "nextjs",
+    "routes": [
+      { "src": "/blog/(.*)", "dest": "/blog/[slug].js" }
+    ]
 }
