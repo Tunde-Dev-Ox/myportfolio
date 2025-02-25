@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from 'react';
 import DashboardLayout from '../../../components/DashboardLayout';
@@ -139,12 +139,16 @@ const BlogPage = () => {
 
 
      // Generate full image URL with domain
-     const getFullImageUrl = (relativeUrl) => {
-        if (!relativeUrl) return '';
-        // Replace with your actual domain
-        const domain = 'https://josephtunde.me';
-        return `${domain}${relativeUrl.startsWith('/') ? '' : '/'}${relativeUrl}`;
-    };
+    //  const getFullImageUrl = (relativeUrl) => {
+    //     if (!relativeUrl) return '';
+    //     // Replace with your actual domain
+    //     const domain = 'https://josephtunde.me';
+    //     return `${domain}${relativeUrl.startsWith('/') ? '' : '/'}${relativeUrl}`;
+    // };
+
+
+    const getFullImageUrl = (url) => url ? `https:${url}` : '';
+
 
     if (loading) {
         return (
@@ -180,7 +184,9 @@ const BlogPage = () => {
     }
 
     const imageUrl = blog.fields.image?.fields?.file?.url || '';
-    const fullImageUrl = imageUrl ? `https:${imageUrl}` : '';
+    // const fullImageUrl = imageUrl ? `https:${imageUrl}` : '';
+    const fullImageUrl = getFullImageUrl(blog.fields.image?.fields?.file?.url);
+
 
     return (
         // <DashboardLayout>
