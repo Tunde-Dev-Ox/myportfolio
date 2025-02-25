@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 import './index.scss'
 
 const BlogCard = ({ title, date, tag, img, link, alt }) => {
     return(
-        <Link to ={link} className="all_blogs__card">
+        <Link href={link} className="all_blogs__card">
             <figure>
                 <img src={img} alt={alt} />
             </figure>

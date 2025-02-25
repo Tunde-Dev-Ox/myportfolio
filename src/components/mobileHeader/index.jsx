@@ -1,6 +1,8 @@
+'use client';
+
 import './index.scss';
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
-import { Link } from 'react-router-dom'
+import Link from 'next/link';
 import { CiHome, CiMail } from 'react-icons/ci';
 import { IoPersonOutline } from 'react-icons/io5';
 import { PiSuitcaseSimple } from 'react-icons/pi';
@@ -49,16 +51,10 @@ const MobileHeader = () => {
                 link: '/contact'
             }
         ]
-        const [active, setActive] = useState(() => {
-            return localStorage.getItem('activeSidebarIndex') 
-                ? parseInt(localStorage.getItem('activeSidebarIndex')) 
-                : null;
-        });
-    
+        const [active, setActive] = useState(null);
         const handleActive = (index) => {
             const newIndex = active === index ? null : index;
             setActive(newIndex);
-            localStorage.setItem('activeSidebarIndex', newIndex);  // Store the value
         };
         const [open, setOpen] = useState(false);
         const handleOpen = () => {
@@ -67,7 +63,7 @@ const MobileHeader = () => {
     return (
         <div className="mobile_header">
             <div className="mobile-header_container">
-                <Link to="/" className="mobile_header__left">
+                <Link href="/" className="mobile_header__left">
                     <figure>
                         <img src="/tunde.png" alt="Logo" />
                     </figure>
@@ -94,7 +90,7 @@ const MobileHeader = () => {
                                     key={index}
                                     onClick={() => handleActive(index)}
                                     className={active === index ? 'list-active' : ''}>
-                                    <Link to={item.link}>
+                                    <Link href={item.link}>
                                         {item.icon}
                                         <span className='sidebar__nav-text'>{item.title}</span>
                                     </Link>
@@ -106,7 +102,7 @@ const MobileHeader = () => {
                     <div className="sidebar__lower-nav">
                     <ul>
                         <li>
-                            <Link to="https://x.com/__jot">
+                            <Link href="https://x.com/__jot">
                                 <FaTwitter />
                                 <span className="social_media_text">
                                     Twitter
@@ -114,7 +110,7 @@ const MobileHeader = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="https://github.com/Tunde-Dev-Ox">
+                            <Link href="https://github.com/Tunde-Dev-Ox">
                                 <FaGithub />
                                 <span className="social_media_text">
                                     Github
@@ -122,7 +118,7 @@ const MobileHeader = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="https://www.linkedin.com/in/josephtunde/">
+                            <Link href="https://www.linkedin.com/in/josephtunde/">
                                 <FaLinkedin />
                                 <span className="social_media_text">
                                     LinkedIn

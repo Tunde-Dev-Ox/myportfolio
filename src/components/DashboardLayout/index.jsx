@@ -7,7 +7,6 @@ const DashboardLayout = ({ children }) => {
     return(
         <div className="dashboard">
             <Sidebar />
-            {/* <MobileHeader /> */}
             <div className="main__content-wrapper">
                 <div className="main__content">
                     <MobileHeader />

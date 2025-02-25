@@ -1,0 +1,919 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/sidebar/index.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* ==============
+FLEX ROW CENTER
+================== */
+/* ==============
+FLEX ROW START
+================== */
+/* ==============
+FLEX ROW END
+================== */
+/* ==============
+FLEX ROW BETWEEN
+================== */
+/* ==============
+FLEX ROW AROUND
+================== */
+/* ==============
+FLEX ROW EVENLY
+================== */
+/* ======================
+FLEX ROW START END NOWRAP
+========================== */
+/* ======================
+FLEX ROW END END NOWRAP
+========================== */
+/* ==================
+FLEX COLUMN CENTER
+==================== */
+/* =====================
+FLEX COLUMN START START
+======================== */
+/* =======================
+FLEX COLUMN START CENTER
+========================== */
+/* =========================
+FLEX COLUMN BETWEEN CENTER
+============================ */
+/* =========================
+FLEX COLUMN BETWEEN START
+============================ */
+/* =========================
+FLEX COLUMN END CENTER
+============================ */
+/* =========================
+FLEX COLUMN END START
+============================ */
+/* =========================
+FLEX COLUMN END END
+============================ */
+/* =================
+TRUNCATE TEXT
+==================== */
+@keyframes keyframe_14ic1xm {
+  0% {
+    opacity: 0;
+    transform: translate(0, 40%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.sidebar {
+  grid-area: sidebar;
+  height: 100vh;
+  width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 24px;
+}
+@media only screen and (max-width: 985px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar--innerwrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 10px 16px;
+  background-color: rgb(255, 255, 255);
+  border-right: 1px solid rgb(249, 246, 246);
+  border-radius: 14px;
+}
+
+.sidebar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+.sidebar__logo figure {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+}
+.sidebar__logo figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.sidebar__logo .sidebar-header {
+  margin-left: 10px;
+}
+.sidebar__logo .sidebar-header h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #040404;
+}
+.sidebar__logo .sidebar-header p {
+  font-size: 0.756rem;
+  color: rgb(101, 101, 101);
+}
+
+.sidebar__top-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 80px;
+  margin-bottom: auto;
+}
+.sidebar__top-nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+}
+.sidebar__top-nav ul li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar__top-nav ul li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  color: rgb(101, 101, 101);
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+}
+.sidebar__top-nav ul li a svg:first-child {
+  margin-right: 8px;
+  font-size: 1.175rem;
+  color: rgb(101, 101, 101);
+}
+.sidebar__top-nav ul li a .sidebar__nav-text {
+  font-size: 0.905rem;
+  font-weight: 400;
+}
+.sidebar__top-nav ul li a svg:last-child {
+  margin-left: auto;
+  font-size: 1.175rem;
+  color: rgb(101, 101, 101);
+}
+.sidebar__top-nav ul li:hover {
+  background-color: rgb(232, 232, 232);
+  border-radius: 5px;
+}
+.sidebar__top-nav ul li:hover a {
+  color: rgb(25, 24, 24);
+}
+.sidebar__top-nav ul li:hover svg {
+  color: rgb(25, 24, 24);
+}
+
+.sidebar__lower-nav {
+  width: 100%;
+}
+.sidebar__lower-nav ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar__lower-nav ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.sidebar__lower-nav ul li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  color: rgb(101, 101, 101);
+  text-decoration: none;
+}
+.sidebar__lower-nav ul li a svg {
+  font-size: 1.2rem;
+}
+.sidebar__lower-nav ul li a span {
+  font-size: 0.905rem;
+  font-weight: 400;
+  margin-left: 8px;
+  margin-right: auto;
+}
+.sidebar__lower-nav ul li:hover {
+  background-color: rgb(232, 232, 232);
+  border-radius: 5px;
+}
+.sidebar__lower-nav ul li:hover a {
+  color: rgb(25, 24, 24);
+}
+.sidebar__lower-nav ul li:hover svg {
+  color: rgb(25, 24, 24);
+}
+
+.sidebar__top-nav ul li {
+  /* Normal state styles */
+}
+.sidebar__top-nav ul li.list-active {
+  background-color: #f5f5f5; /* Optional: light background for active item */
+}
+.sidebar__top-nav ul li.list-active a {
+  color: black;
+  font-weight: 500;
+}
+.sidebar__top-nav ul li.list-active a .arrow_forward {
+  opacity: 1;
+  color: black;
+}
+.sidebar__top-nav ul li.list-active a span {
+  color: black;
+}
+.sidebar__top-nav ul li.list-active a svg {
+  color: black;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/DashboardLayout/index.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* ==============
+FLEX ROW CENTER
+================== */
+/* ==============
+FLEX ROW START
+================== */
+/* ==============
+FLEX ROW END
+================== */
+/* ==============
+FLEX ROW BETWEEN
+================== */
+/* ==============
+FLEX ROW AROUND
+================== */
+/* ==============
+FLEX ROW EVENLY
+================== */
+/* ======================
+FLEX ROW START END NOWRAP
+========================== */
+/* ======================
+FLEX ROW END END NOWRAP
+========================== */
+/* ==================
+FLEX COLUMN CENTER
+==================== */
+/* =====================
+FLEX COLUMN START START
+======================== */
+/* =======================
+FLEX COLUMN START CENTER
+========================== */
+/* =========================
+FLEX COLUMN BETWEEN CENTER
+============================ */
+/* =========================
+FLEX COLUMN BETWEEN START
+============================ */
+/* =========================
+FLEX COLUMN END CENTER
+============================ */
+/* =========================
+FLEX COLUMN END START
+============================ */
+/* =========================
+FLEX COLUMN END END
+============================ */
+/* =================
+TRUNCATE TEXT
+==================== */
+@keyframes keyframe_14ic1xm {
+  0% {
+    opacity: 0;
+    transform: translate(0, 40%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 240px auto;
+  grid-template-rows: 1fr;
+  grid-template-areas: "sidebar main";
+  height: auto;
+}
+@media only screen and (max-width: 985px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "main";
+    grid-template-columns: 1fr;
+  }
+}
+
+.main__content-wrapper {
+  grid-area: main;
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+.main__content-wrapper .main__content {
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+@media only screen and (max-width: 985px) {
+  .main__content-wrapper {
+    padding: 0 12px;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/footer/index.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* ==============
+FLEX ROW CENTER
+================== */
+/* ==============
+FLEX ROW START
+================== */
+/* ==============
+FLEX ROW END
+================== */
+/* ==============
+FLEX ROW BETWEEN
+================== */
+/* ==============
+FLEX ROW AROUND
+================== */
+/* ==============
+FLEX ROW EVENLY
+================== */
+/* ======================
+FLEX ROW START END NOWRAP
+========================== */
+/* ======================
+FLEX ROW END END NOWRAP
+========================== */
+/* ==================
+FLEX COLUMN CENTER
+==================== */
+/* =====================
+FLEX COLUMN START START
+======================== */
+/* =======================
+FLEX COLUMN START CENTER
+========================== */
+/* =========================
+FLEX COLUMN BETWEEN CENTER
+============================ */
+/* =========================
+FLEX COLUMN BETWEEN START
+============================ */
+/* =========================
+FLEX COLUMN END CENTER
+============================ */
+/* =========================
+FLEX COLUMN END START
+============================ */
+/* =========================
+FLEX COLUMN END END
+============================ */
+/* =================
+TRUNCATE TEXT
+==================== */
+@keyframes keyframe_14ic1xm {
+  0% {
+    opacity: 0;
+    transform: translate(0, 40%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.footer {
+  height: auto;
+  width: 100%;
+}
+@media only screen and (max-width: 580px) {
+  .footer {
+    margin-top: 2rem;
+  }
+}
+
+.footer__wrapper {
+  height: auto;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+
+.empty--div {
+  width: 100%;
+  height: 0.6px;
+  background-color: rgb(201, 201, 201);
+  margin: 10px 0;
+}
+
+.footer__mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media only screen and (max-width: 580px) {
+  .footer__mid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.footer__mid .footer__mid-left p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #817e7e;
+  margin-bottom: 10px;
+}
+.footer__mid .footer__mid-right p {
+  font-size: clamp(3.5rem, 3.136rem + 1.82vw, 4.5rem);
+  font-weight: 500;
+  color: #817e7e;
+  margin-bottom: 10px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media only screen and (max-width: 580px) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.footer__bottom p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #817e7e;
+  margin-bottom: 10px;
+}
+.footer__bottom span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #817e7e;
+  margin-bottom: 10px;
+}
+.footer__bottom span a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #060606;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer__bottom span a:hover {
+  color: #474646;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/mobileHeader/index.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.mobile_header {
+  display: none;
+}
+@media only screen and (max-width: 985px) {
+  .mobile_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+}
+.mobile_header .mobile-header_container {
+  background: rgba(185, 184, 184, 0.4117647059);
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgb(238, 237, 237);
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  position: relative;
+}
+
+.mobile_header__left {
+  display: flex;
+  text-decoration: none;
+}
+.mobile_header__left figure {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+}
+.mobile_header__left figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.mobile_header__left .mobile_header__content {
+  margin-left: 10px;
+}
+.mobile_header__left .mobile_header__content h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(5, 5, 5);
+}
+.mobile_header__left .mobile_header__content p {
+  font-size: 0.8rem;
+  color: #444343;
+}
+
+.mobile__hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  position: relative;
+  z-index: 100;
+}
+.mobile__hamburger .hamburger__line {
+  width: 100%;
+  height: 1.5px;
+  background-color: #181717;
+  margin: 3px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.open .line1 {
+  transform: translateY(7px) rotate(50deg);
+}
+
+.open .line2 {
+  transform: translateY(-1px) rotate(-45deg);
+}
+
+.mobile_nav__dropdown_wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+
+.mobile_nav__dropdown {
+  width: 100%;
+  max-width: 900px;
+  background: #fcfcfc;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+.mobile_nav__dropdown ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+.mobile_nav__dropdown ul li {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.mobile_nav__dropdown ul li a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(14, 14, 14);
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mobile_nav__dropdown ul li a span {
+  font-size: 0.8rem;
+  margin-left: 8px;
+}
+
+.mobile_menu__active {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mobile_line {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/app/blog/[slug]/index.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.blog_page {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: baseline;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+@media only screen and (max-width: 985px) {
+  .blog_page {
+    padding-top: 8rem;
+  }
+}
+
+.blog_page__title {
+  font-size: clamp(1.75rem, 1.732rem + 0.09vw, 1.8rem);
+  font-weight: 700;
+  color: #393939;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.blog_page__details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.blog_page__tag {
+  padding: 6px 10px;
+  background-color: #ccc;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1b1a1a;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .blog_page__tag {
+    font-size: 0.875rem;
+  }
+}
+
+.blog_page__date {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.blog_page__image {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0.7rem;
+  height: 400px;
+  margin-top: 1.5rem;
+}
+.blog_page__image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.blog_page__content {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #a3a2a2;
+}
+
+.author__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.author__name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+.author__name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.blog_empty__div {
+  width: 100%;
+  height: 0.7px;
+  background-color: rgba(144, 144, 144, 0.7725490196);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.recommended__posts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3rem;
+  flex-direction: column;
+}
+.recommended__posts .recommended__posts_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(101, 101, 101);
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.recommended__posts_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 60px;
+  padding: 20px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: baseline;
+}
+@media only screen and (max-width: 768px) {
+  .recommended__posts_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/blogCard/index.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.all_blogs__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  text-decoration: none;
+}
+.all_blogs__card figure {
+  width: 100%;
+  height: 230px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.all_blogs__card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.all_blogs__card .all_blogs__card_details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.all_blogs__card .all_blogs__card_details .all_blogs__card_tag {
+  padding: 6px 10px;
+  background-color: #ccc;
+  border-radius: 18px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #1b1a1a;
+}
+.all_blogs__card .all_blogs__card_details .all_blogs__card_date {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #4a4a4a;
+  margin-left: 10px;
+}
+.all_blogs__card .all_blogs__card_title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #393939;
+  margin-bottom: 10px;
+  max-width: 90%;
+  text-align: left;
+}
+@media only screen and (max-width: 580px) {
+  .all_blogs__card .all_blogs__card_title {
+    width: 100%;
+    max-width: unset;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/contactCard/index.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.contact-card {
+  width: 100%;
+  background: url("/wave.svg");
+  background-size: cover;
+  background-size: 100px;
+  background-position: center;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 3rem;
+  background-color: #ffffff;
+}
+.contact-card .contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-direction: column;
+  padding: 2rem;
+}
+@media only screen and (max-width: 580px) {
+  .contact-card .contact-wrapper {
+    padding: 0;
+  }
+}
+.contact-card .contact-wrapper p {
+  font-size: 1rem;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 1.7rem;
+  font-weight: 600;
+  color: rgb(27, 26, 26);
+}

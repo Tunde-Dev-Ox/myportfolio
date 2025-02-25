@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import './index.scss'
 
 const Footer = () => {
@@ -42,9 +41,9 @@ const Footer = () => {
                                 &copy; {year} Joseph Tunde
                             </p>
                             <span>
-                                Built with 💓, React.js, SCSS, and Contentful by <Link to='https://x.com/__jot'>
+                                Built with 💓, Next JS, SCSS, and Contentful by <a href='https://x.com/__jot'>
                                     Joseph Tunde
-                                </Link>
+                                </a>
                             </span>
                         </div>
                     </div>
