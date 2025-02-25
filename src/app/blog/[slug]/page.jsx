@@ -1,6 +1,6 @@
 // Updated /blog/[slug]/page.js
 "use client";
-
+export const dynamic = 'force-dynamic';
 import React from 'react';
 import DashboardLayout from '../../../components/DashboardLayout';
 import './index.scss';
