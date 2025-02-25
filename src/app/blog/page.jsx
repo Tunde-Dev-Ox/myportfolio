@@ -61,7 +61,7 @@ const Blog = () => {
                     </div>
                 </div>
                 <p className='home-about'>
-                    I write about tech, programming, products, and life in general. I share my thoughts, experiences, and knowledge on these topics. I hope you find them helpful and interesting. Enjoy!🚀
+                    I write about products, product management, project management, software, leadership and life in general. I share my thoughts, experiences, and knowledge on these topics. I hope you find them helpful and interesting. Enjoy!🚀
                 </p>
                 {blogs && blogs.length > 0 ? (
                     <>

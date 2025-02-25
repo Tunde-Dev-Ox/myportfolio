@@ -32,59 +32,28 @@ const BlogPage = () => {
             )),
         renderNode: {
             [BLOCKS.PARAGRAPH]: (node, children) => (
-                <p style={{ fontSize: '14px', lineHeight: '1.6', marginBottom: '18px', color: 'rgb(77, 77, 77)' }}>{children}</p>
+                <p style={{ fontSize: '15px', lineHeight: '1.6', marginBottom: '18px', color: 'rgb(77, 77, 77)', letterSpacing: '.7px' }}>{children}</p>
             ),
             [BLOCKS.HEADING_1]: (node, children) => (
-                <h1 style={{ fontSize: '28px', fontWeight: 'bold', marginBottom: '25px', color: '#000' }}>{children}</h1>
+                <h1 style={{ fontSize: '28px', fontWeight: 'bold', marginBottom: '25px', color: '#000', letterSpacing: '.7px' }}>{children}</h1>
             ),
             [BLOCKS.HEADING_2]: (node, children) => (
-                <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h2>
+                <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '22px', color: '#000', letterSpacing: '.7px' }}>{children}</h2>
             ),
             [BLOCKS.HEADING_3]: (node, children) => (
-                <h3 style={{ fontSize: '22px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h3>
+                <h3 style={{ fontSize: '22px', fontWeight: 'bold', marginBottom: '22px', color: '#000', letterSpacing: '.7px' }}>{children}</h3>
             ),
             [BLOCKS.HEADING_4]: (node, children) => (
-                <h4 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h4>
+                <h4 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '22px', color: '#000', letterSpacing: '.7px' }}>{children}</h4>
             ),
             [BLOCKS.HEADING_5]: (node, children) => (
-                <h5 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h5>
+                <h5 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '22px', color: '#000', letterSpacing: '.7px' }}>{children}</h5>
             ),
             [BLOCKS.HEADING_6]: (node, children) => (
-                <h6 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '22px', color: '#000' }}>{children}</h6>
+                <h6 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '22px', color: '#000', letterSpacing: '.7px' }}>{children}</h6>
             ),
         }
     };
-    
-    // useEffect(() => {
-    //     const fetchBlog = async () => {
-    //         if (!slug) return;
-            
-    //         setLoading(true);
-    //         try {
-    //             const response = await client.getEntries({
-    //                 content_type: 'blogPage',
-    //                 'fields.slug': slug,
-    //                 include: 3
-    //             });
-                
-    //             if (response.items.length > 0) {
-    //                 setBlog(response.items[0]);
-    //                 console.log('Blog fetched:', response.items[0]);
-    //             } else {
-    //                 setError('Blog not found');
-    //                 console.log('No blog found with slug:', slug);
-    //             }
-    //         } catch (error) {
-    //             setError('Error fetching blog');
-    //             console.log('Error fetching blog post:', error);
-    //         } finally {
-    //             setLoading(false);
-    //         }
-    //     };
-        
-    //     fetchBlog();
-    // }, [slug]);
-
 
     useEffect(() => {
         const fetchBlog = async () => {
@@ -136,17 +105,6 @@ const BlogPage = () => {
         fetchBlog();
     }, [slug]);
 
-
-
-     // Generate full image URL with domain
-    //  const getFullImageUrl = (relativeUrl) => {
-    //     if (!relativeUrl) return '';
-    //     // Replace with your actual domain
-    //     const domain = 'https://josephtunde.me';
-    //     return `${domain}${relativeUrl.startsWith('/') ? '' : '/'}${relativeUrl}`;
-    // };
-
-
     const getFullImageUrl = (url) => url ? `https:${url}` : '';
 
 
@@ -184,72 +142,10 @@ const BlogPage = () => {
     }
 
     const imageUrl = blog.fields.image?.fields?.file?.url || '';
-    // const fullImageUrl = imageUrl ? `https:${imageUrl}` : '';
     const fullImageUrl = getFullImageUrl(blog.fields.image?.fields?.file?.url);
 
 
     return (
-        // <DashboardLayout>
-        //     <div className="blog_page">
-        //         <h1 className='blog_page__title'>
-        //             {blog.fields.title}
-        //         </h1>
-        //         <div className="blog-page__details">
-        //             <span className='blog_page__date'>
-        //                 {blog.fields.date}
-        //             </span>
-        //             <span className='blog_page__tag'>
-        //                 {blog.fields.tag}
-        //             </span>
-        //         </div>
-        //         <div className="blog_page__image">
-        //             <img
-        //             src={`${blog.fields.image.fields.file.url}?q=35`}
-        //             alt={blog.fields.image.fields.title || ''}
-        //             />
-        //         </div>
-        //         <div className="author__details">
-        //             <Link href="/contact" className="author__name">
-        //                 <img 
-        //                 src={`${blog.fields.avatar.fields.file.url}?q=35`} 
-        //                 alt="" />
-        //                 <span className='author__name_text'>
-        //                     {blog.fields.authorName}
-        //                 </span>
-        //             </Link>
-        //             <span className='blog_page__tag'>
-        //                 {blog.fields.tag}
-        //             </span>
-        //         </div>
-        //         <div className="blog_empty__div"></div>
-        //         <div className="blog_page__content">
-        //             {documentToReactComponents(blog.fields.body, options)}
-        //         </div>
-        //         {blog.fields.recommendedPosts && blog.fields.recommendedPosts.length > 0 && (
-        //             <div className="recommended__posts">
-        //                 <h2 className="recommended__posts_title">
-        //                     Related Posts
-        //                 </h2>
-        //                 <div className="recommended__posts_wrapper">
-        //                     {blog.fields.recommendedPosts.map((post) => (
-        //                         <BlogCard
-        //                         key={post.sys.id}
-        //                         title={post.fields.title}
-        //                         date={post.fields.date}
-        //                         tag={post.fields.tag}
-        //                         img={`${post.fields.image.fields.file.url}?q=35`}
-        //                         link={`/blog/${post.fields.slug}`}
-        //                         alt={post.fields.image.fields.title}
-        //                         />
-        //                     ))}
-        //                 </div>
-        //             </div>
-        //         )}
-        //         <ContactCard />
-        //     </div>
-        // </DashboardLayout>
-
-
         <DashboardLayout>
             <Head>
                 <title>{blog.fields.title}</title>
