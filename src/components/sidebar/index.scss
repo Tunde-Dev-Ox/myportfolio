@@ -10,12 +10,12 @@
     top: 0;
     left: 0;
     z-index: 100;
-    @include breakpoint.breakpoint-custom-down(985) {
-        display: none;
-    }
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 24px;
+    @include breakpoint.breakpoint-custom-down(985) {
+        display: none;
+    }
 }
 
 .sidebar--innerwrapper {
