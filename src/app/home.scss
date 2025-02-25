@@ -310,10 +310,10 @@
     width: 100%;
     align-items: baseline;
     border-radius: 8px;
+    background-color: #fff;
     @include breakpoint.breakpoint-custom-down(985) {
         grid-template-columns: repeat(1, 1fr);
     }
-    background-color: #fff;
 }
 
 //home stacks

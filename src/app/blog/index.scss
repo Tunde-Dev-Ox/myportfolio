@@ -87,11 +87,11 @@
     padding: 20px;
     width: 100%;
     align-items: baseline;
+    background-color: #fff;
+    border-radius: 8px;
     @include breakpoint.breakpoint-custom-down(768) {
         grid-template-columns: repeat(1, 1fr);
     }
-    background-color: #fff;
-    border-radius: 8px;
 }
 
 
