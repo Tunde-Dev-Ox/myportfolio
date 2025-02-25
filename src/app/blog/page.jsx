@@ -1,13 +1,16 @@
 "use client";
+
 import DashboardLayout from "../../components/DashboardLayout";
 import "./index.scss";
 import Link from "next/link";
 import BlogCard from "../../components/blogCard";
-import useFetchBlogs from '../../hooks/useFetchBlogs'
+import useFetchBlogs from '../../hooks/useFetchBlogs';
 import ContactCard from "../../components/contactCard";
 import { useEffect, useState } from "react";
 import { stringify, parse } from "flatted";
 
+// This component needs to be a client component because it uses React hooks
+// But we can still use dynamic rendering to avoid prerendering during build
 const Blog = () => {
     const [cachedBlogs, setCachedBlogs] = useState(null);
     const { blogsPreview, loading, error } = useFetchBlogs({ contentType: "blogPage" });
