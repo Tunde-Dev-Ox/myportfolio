@@ -6,20 +6,20 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'Joseph Tunde',
   description: 'Joseph Tunde is a technical product manager, project manager, product leader, and writer building exceptional products and teams.',
-  image: '/tunde.png',
+  image: 'https://wwww.josephtunde.me/tunde.png',
   twitterHandle: '@__jot',
-  siteUrl: 'https://josephtunde.me',
+  siteUrl: 'https://www.josephtunde.me',
   siteLanguage: 'en',
   siteLocale: 'en_US',
   authorName: 'Joseph Tunde',
-  authorAvatar: '/tunde.png',
+  authorAvatar: 'https://wwww.josephtunde.me/tunde.png',
   authorDescription: 'Joseph Tunde is a technical product manager, project manager, product leader, and writer building exceptional products and teams.',
   defaultTitle: 'Joseph Tunde',
   defaultDescription: 'Joseph Tunde is a technical product manager, project manager, product leader, and writer building exceptional products and teams.',
-  defaultImage: '/tunde.png',
+  defaultImage: 'https://wwww.josephtunde.me/tunde.png',
   defaultTwitterHandle: '@__jot',
   defaultAuthor: 'Joseph Tunde',
-  defaultAuthorAvatar: '/tunde.png',
+  defaultAuthorAvatar: 'https://wwww.josephtunde.me/tunde.png',
   defaultAuthorDescription: 'Joseph Tunde is a technical product manager, project manager, product leader, and writer building exceptional products and teams.',
   socialLinks: {
       twitter: 'https://twitter.com/__jot',
@@ -27,7 +27,7 @@ export const metadata = {
       github: 'https://github.com/Tunde-Dev-Ox',
       email: 'mailto:iamjosephtunde@gmail.com',
   },
-  metadataBase: new URL('https://josephtunde.me'),
+  metadataBase: new URL('https://www.josephtunde.me'),
   icons: {
       favicon: '/favicon.ico',
       appleTouchIcon: '/apple-touch-icon.png',
@@ -54,11 +54,11 @@ export const metadata = {
       type: 'website',
       locale: 'en_US',
       description: 'Joseph Tunde is a technical product manager, project manager, product leader, and writer building exceptional products and teams.',
-      url: 'https://josephtunde.me',
+      url: 'https://www.josephtunde.me',
       site_name: 'Joseph Tunde',
       images: [
           {
-              url: '/tunde.png',
+              url: 'https://wwww.josephtunde.me/tunde.png',
               width: 800,
               height: 600,
               alt: 'Joseph Tunde',
@@ -67,13 +67,14 @@ export const metadata = {
   },
 
   twitter: {
-      handle: '@__jot',
+      card: 'summary_large_image', // Use this instead of cardType
       site: '@__jot',
-      cardType: 'summary_large_image',
+      creator: '@__jot',
       title: 'Joseph Tunde',
+      handle: '@__jot',
       description: 'Joseph Tunde is a technical product manager, project manager, product leader, and writer building exceptional products and teams.',
-      images: ['/tunde.png'],
-  },
+      images: ['https://wwww.josephtunde.me/tunde.png'],
+    },
 
   //robots and canonical urls 
   robots: {
@@ -81,7 +82,7 @@ export const metadata = {
       follow: true,
   },
   alternates: {
-      canonical: 'https://josephtunde.me'
+      canonical: 'https://wwww.josephtunde.me'
   }
 }
 

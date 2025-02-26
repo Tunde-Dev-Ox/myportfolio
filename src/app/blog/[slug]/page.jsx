@@ -336,7 +336,7 @@ export async function generateMetadata({ params }) {
       title: blog.fields.title,
       description: description,
       openGraph: {
-        title: blog.fields.title,
+        title: `${blog.fields.title} | Joseph Tunde`,
         description: description,
         url: `https://www.josephtunde.me/blog/${slug}`,
         siteName: 'Joseph Tunde',
@@ -352,7 +352,16 @@ export async function generateMetadata({ params }) {
         card: 'summary_large_image',
         title: blog.fields.title,
         description: description,
-        images: imageUrl ? [imageUrl] : []
+        images: imageUrl ? [imageUrl] : [],
+        site: '@__jot',
+        handle: '@__jot',
+      },
+      linkedin: {
+        title: blog.fields.title,
+        description: description,
+        images: imageUrl ? [imageUrl] : [],
+        sites: '@josephtunde',
+        handle: '@josephtunde',
       },
       alternates: {
         canonical: `https://www.josephtunde.me/blog/${slug}`
