@@ -1,6 +1,7 @@
 import DashboardLayout from "../../../components/DashboardLayout";
 import Link from "next/link";
 import ContactCard from '../../../components/contactCard';
+import '../lingroks/index.scss'
 
 const Brooi = () => {
     return(

@@ -170,7 +170,7 @@ const Home = () => {
                         projectDescription="A vacation rental platform that helps you find the best vacation rentals in your city."
                         alt="Brooi"
                         projectYear="2023"
-                        link="/brooi"
+                        link="/projects/brooi"
                     />
                     <ProjectCard 
                         projectImage="/lingroks.jpg"
@@ -178,7 +178,7 @@ const Home = () => {
                         projectDescription="An AI powered translation and text-to-speech app that helps you translate and listen to text in different languages."
                         alt="Lingroks"
                         projectYear="2025"
-                        link="/lingroks"
+                        link="/projects/lingroks"
                     />
                     </div>
                     <div className="see-more">
