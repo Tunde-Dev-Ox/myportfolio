@@ -38,5 +38,11 @@ export default [
         { allowConstantExport: true },
       ],
     },
+    plugins: {
+      '@next/next': next
+    },
+    rules: {
+      '@next/next/no-html-link-for-pages': 'error'
+    }
   },
 ]
