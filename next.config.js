@@ -5,6 +5,8 @@ const nextConfig = {
     },
     reactStrictMode: true,
     output: "standalone",
+    pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+    trailingSlash: false,
   };
   
 export default nextConfig;
