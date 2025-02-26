@@ -362,6 +362,8 @@ export async function generateMetadata({ params }) {
         images: imageUrl ? [{ url: imageUrl }] : [],
         sites: '@josephtunde',
         handle: '@josephtunde',
+        author: 'Joseph Tunde',
+        type: 'article',
       },
       alternates: {
         canonical: `https://www.josephtunde.me/blog/${slug}`
