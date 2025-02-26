@@ -15,7 +15,7 @@ import ContactCard from '../components/contactCard'
 import { useState } from 'react'
 
 
-const Home = () => {
+export default function Home() {
     const {blogsPreview, loading, error} = useFetchBlogs({ contentType: "blogPage" });
     const [showMore, setShowMore] = useState(false);
     const profession = [
@@ -274,5 +274,3 @@ const Home = () => {
         </DashboardLayout>
     )
 }
-
-export default Home

@@ -9,7 +9,7 @@ import { PiLinkedinLogo } from 'react-icons/pi';
 import { PiGithubLogoLight } from 'react-icons/pi';
 import { FaWhatsapp } from 'react-icons/fa6';
 
-const Contact = () => {
+export default function Contact() {
     return(
         <DashboardLayout>
             <div className="contact">
@@ -79,5 +79,3 @@ const Contact = () => {
         </DashboardLayout>
     )
 }
-
-export default Contact;

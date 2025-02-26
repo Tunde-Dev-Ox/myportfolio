@@ -267,7 +267,7 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
 import DashboardLayout from '../../../components/DashboardLayout';
-import './index.scss'; // You can still import styles in a Server Component
+import './index.scss';
 import client from '../../../contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
@@ -275,7 +275,8 @@ import Link from 'next/link';
 import ContactCard from '../../../components/contactCard';
 import BlogCard from '../../../components/blogCard';
 
-// OPTIONAL: If you want to statically generate all slugs at build time, add generateStaticParams():
+
+// 1. Fetch data from Contentful on the server
 // export async function generateStaticParams() {
 //   const response = await client.getEntries({ content_type: 'blogPage' });
 //   return response.items.map((item) => ({ slug: item.fields.slug }));

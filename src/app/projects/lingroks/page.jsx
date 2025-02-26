@@ -3,7 +3,7 @@ import DashboardLayout from "../../../components/DashboardLayout";
 import Link from 'next/link';
 import ContactCard from '../../../components/contactCard';
 
-const Lingroks = () => {
+export default function Lingroks() {
     return(
         <DashboardLayout>
             <div className="project-case-page">
@@ -117,5 +117,3 @@ const Lingroks = () => {
         </DashboardLayout>
     )
 }
-
-export default Lingroks;

@@ -8,7 +8,7 @@ import { GoRocket } from "react-icons/go";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-const About = () => {
+export default function About() {
     return (
         <DashboardLayout>
         <div className="about-page">
@@ -182,5 +182,3 @@ const About = () => {
         </DashboardLayout>
     );
 }
-
-export default About;

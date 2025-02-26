@@ -3,7 +3,7 @@ import Link from "next/link";
 import ContactCard from '../../../components/contactCard';
 import '../lingroks/index.scss'
 
-const Brooi = () => {
+export default function Brooi() {
     return(
         <DashboardLayout>
             <div className="project-case-page">
@@ -133,5 +133,3 @@ const Brooi = () => {
         </DashboardLayout>
     )
 }
-
-export default Brooi;

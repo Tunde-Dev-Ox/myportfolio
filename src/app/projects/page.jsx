@@ -5,7 +5,7 @@ import Link from "next/link";
 import ContactCard from "../../components/contactCard";
 
 
-const Projects = () => {
+export default function Projects() {
     return(
         <DashboardLayout>
             <div className="projects">
@@ -108,5 +108,3 @@ const Projects = () => {
         </DashboardLayout>
     )
 }
-
-export default Projects;

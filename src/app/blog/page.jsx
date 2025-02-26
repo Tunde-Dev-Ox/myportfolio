@@ -148,7 +148,7 @@ import ContactCard from "../../components/contactCard";
 import { useEffect, useState } from "react";
 import { stringify, parse } from "flatted";
 
-const Blog = () => {
+export default function Blog() {
     const [cachedBlogs, setCachedBlogs] = useState([]);
     const [isMounted, setIsMounted] = useState(false);
     const { blogsPreview, loading, error } = useFetchBlogs({ contentType: "blogPage" });
@@ -281,5 +281,3 @@ const Blog = () => {
         </DashboardLayout>
     );
 }
-
-export default Blog;
