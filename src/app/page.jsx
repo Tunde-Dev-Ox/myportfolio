@@ -32,8 +32,8 @@ export default function Home() {
             img: "/writing-hand-medium-skin.svg",
         },
         {
-            role: "Software Developer",
-            description: "Experience working with developers and building software using frontend technologies. Building strength in python and javascript.",
+            role: "Web Developer",
+            description: "Experience working closely with developers to build web and mobile applications that solve real problems. Doing things with React, Next.js, and Python.",
             img: "/project-new.svg",
         }
     ]

@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google';
 import '../assets/scss/main.scss';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -94,6 +95,7 @@ export default function RootLayout({ children }) {
         </head>
         <body className={inter.className}>
             {children}
+            <Script src="https://scripts.simpleanalyticscdn.com/latest.js"  />
         </body>
     </html>
   );
