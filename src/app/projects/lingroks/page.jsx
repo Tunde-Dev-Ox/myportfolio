@@ -101,6 +101,26 @@ export default function Lingroks() {
                                 <p>
                                     Building Lingroks has been a great learning experience for me. I have learned a lot about AI and ML, web development, product management, and team leadership. I have also learned a lot about working in a remote team and managing a project with a tight deadline. In the future, I plan to continue working on Lingroks and adding new features and improvements to the product. My vision is to push Lingroks to a growth stage and make it a leading translation platform in the market.
                                 </p>
+                                <p>
+                                    Some of the great minds I worked with on Lingroks include: 
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/nabin-ydv-511116305/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B1fU0I1k3RouhNjFbIS9%2B0g%3D%3D" target="_blank">Nabin Yadav</a> - Backend Developer & AI Engineer
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/ekweozor-innocent-026336223/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B1fU0I1k3RouhNjFbIS9%2B0g%3D%3D" target="_blank">Innocent Ekweozor</a> - Frontend Developer
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/samuel-hyeman-6b1626174/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B1fU0I1k3RouhNjFbIS9%2B0g%3D%3D" target="_blank">Samuel Hyeman</a> - Software Engineer
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/kenenwogu/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B1fU0I1k3RouhNjFbIS9%2B0g%3D%3D" target="_blank">Kenechukwu Nwogu</a> - Software Engineer
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/einsteinnnamah/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B1fU0I1k3RouhNjFbIS9%2B0g%3D%3D" target="_blank">Einstein Nnamah</a> - Designer
+                                        </li>
+                                    </ul>
+                                </p>
                                 <h2>
                                     Link
                                 </h2>

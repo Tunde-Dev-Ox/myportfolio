@@ -117,6 +117,39 @@ export default function Brooi() {
                                 <p>
                                     Building Brooi was a great learning experience for me. I learned a lot about product management, project management, and working with a remote team. I also learned a lot about the travel and tourism industry, and how to build a product that meets the needs of our users. 
                                 </p>
+                                <p>
+                                    Some of the great minds I worked with on Brooi include: 
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/damilolaoyeyemi?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACezky4BbXSB8j-eaQ9TaF5q18O45bCZWR0&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bl84sz849QT2jiMh0IC5fDg%3D%3D" target="_blank">
+                                                Damilola Oyeyemi
+                                            </a> - Software Engineer & Co-Founder
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/ofobrukweta-jeff-207506136?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACEtxacBxXoqf2nYjWoqONxIAicB-JOa9Kg&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people%3BTNsqxsUsQYeelmfIQpDdqw%3D%3D" target="_blank">
+                                                Ofobrukweta Jeff
+                                            </a> - Software Engineer & Co-Founder
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/obiorah-paul?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACvNB_4B1m64laNrBjmD7zcxqxwESr5vqEs&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people_load_more%3BjmvMVkYdR%2FqvN1acTzl41w%3D%3D" target="_blank">
+                                                Obiorah Paul
+                                            </a> - Product Manager
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/enyoghasim?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADNOlBwBOJEqU22ML-SKDlRofSz5NZzb2dk&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people_load_more%3BjmvMVkYdR%2FqvN1acTzl41w%3D%3D" target="_blank">
+                                                Enyoghasim David
+                                            </a> - Software Engineer
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/ekweozor-innocent-026336223?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADgcr54BKNLcVutwmDr4nu560plXwanHbHU&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_people_load_more%3BjmvMVkYdR%2FqvN1acTzl41w%3D%3D" target="_blank">
+                                                Innocent Ekweozor
+                                            </a> - Software Engineer
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/samuel-hyeman-6b1626174/?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B1fU0I1k3RouhNjFbIS9%2B0g%3D%3D" target="_blank">Samuel Hyeman</a> - Software Engineer
+                                        </li>
+                                    </ul>
+                                </p>
                                 <h2>
                                     Link
                                 </h2>
