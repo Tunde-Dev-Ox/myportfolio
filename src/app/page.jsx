@@ -13,6 +13,8 @@ import { GoRocket } from "react-icons/go";
 import { LiaCertificateSolid } from "react-icons/lia";
 import ContactCard from '../components/contactCard'
 import { useState } from 'react'
+import { Typewriter } from 'react-simple-typewriter'
+
 
 
 export default function Home() {
@@ -25,13 +27,13 @@ export default function Home() {
             img: "/product__management.svg",
         },
         {
-            role: "Writer",
+            role: "Technical Writer",
             description: "Experience writing articles, white papers, blogs, technical documentation, user guides, and product research papers.",
             img: "/writing-hand-medium-skin.svg",
         },
         {
-            role: "Software Dev",
-            description: "Experience working with developers and building software using frontend technologies and python.",
+            role: "Software Developer",
+            description: "Experience working with developers and building software using frontend technologies. Building strength in python and javascript.",
             img: "/project-new.svg",
         }
     ]
@@ -39,12 +41,16 @@ export default function Home() {
     const handleCardClick = (index) => {
         setShowMore(showMore === index ? null : index);
     };
+
     return (
         <DashboardLayout>
             <div className="home">
                 <div className="home__top">
                     <h1 className='home-title'>
-                        Hey👋, I&apos;m Tunde!
+                    Hey👋, I'm{' '}
+                        <span>
+                            <Typewriter words={['Tunde!', 'a PM', 'a Writer!', 'a Dev']} loop={false} />
+                        </span>
                     </h1>
                     <div className="availability">
                         <div className="available">

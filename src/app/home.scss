@@ -146,6 +146,14 @@
     cursor: pointer;
     transition: all .3s ease-in-out;
     position: relative;
+    &:hover {
+        scale: 1.1;
+    }
+    @include breakpoint.breakpoint-custom-down(985) {
+        &:hover {
+            scale: 1;
+        }
+    }
 
     img {
         width: 100px;

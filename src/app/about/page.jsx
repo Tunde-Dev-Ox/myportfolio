@@ -1,4 +1,5 @@
 import "./index.scss";
+import "../home.scss";
 import Link from "next/link";
 import DashboardLayout from "../../components/DashboardLayout";
 import ContactCard from "../../components/contactCard";

@@ -8,6 +8,7 @@ import { PiSuitcaseSimple } from 'react-icons/pi';
 import { GoStack } from "react-icons/go";
 import { IoBookOutline } from "react-icons/io5";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { MdOutlineRoomService } from "react-icons/md";
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useMemo } from 'react';
@@ -18,9 +19,10 @@ const Sidebar = () => {
         { id: 1, title: 'Home', icon: <CiHome />, link: '/' },
         { id: 2, title: 'About', icon: <IoPersonOutline />, link: '/about' },
         { id: 3, title: 'Projects', icon: <PiSuitcaseSimple />, link: '/projects' },
-        { id: 4, title: 'Stack', icon: <GoStack />, link: '/stack' },
-        { id: 5, title: 'Blog', icon: <IoBookOutline />, link: '/blog' },
-        { id: 6, title: 'Contact', icon: <CiMail />, link: '/contact' }
+        { id: 4, title: 'Services', icon: <MdOutlineRoomService />, link: '/services' },
+        { id: 5, title: 'Stack', icon: <GoStack />, link: '/stack' },
+        { id: 6, title: 'Blog', icon: <IoBookOutline />, link: '/blog' },
+        { id: 7, title: 'Contact', icon: <CiMail />, link: '/contact' }
     ], []);
 
     const [active, setActive] = useState(null);

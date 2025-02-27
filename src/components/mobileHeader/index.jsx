@@ -8,6 +8,7 @@ import { IoPersonOutline } from 'react-icons/io5';
 import { PiSuitcaseSimple } from 'react-icons/pi';
 import { GoStack } from "react-icons/go";
 import { IoBookOutline } from "react-icons/io5";
+import { MdOutlineRoomService } from "react-icons/md";
 import { useState } from 'react';
 
 
@@ -32,20 +33,26 @@ const MobileHeader = () => {
                 icon: <PiSuitcaseSimple />,
                 link: '/projects'
             },
+            { 
+                id: 4, 
+                title: 'Services', 
+                icon: <MdOutlineRoomService />, 
+                link: '/services'
+            },
             {
-                id: 4,
+                id: 5,
                 title: 'Stack',
                 icon: <GoStack />,
                 link: '/stack'
             },
             {
-                id: 5,
+                id: 6,
                 title: 'Blog',
                 icon: <IoBookOutline />,
                 link: '/blog'
             },
             {
-                id: 6,
+                id: 7,
                 title: 'Contact',
                 icon: <CiMail />,
                 link: '/contact'
