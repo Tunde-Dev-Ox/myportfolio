@@ -149,10 +149,13 @@ export default function Home() {
                                 Certifications
                             </h4>
                             <ul>
-                                <li>
-                                    Project Management Professional (PMP) - PMI -- In view<br /><br/>
-                                    2025
-                                </li>
+                            <li>
+                                Asana Workflow Specialist<br /><br/>
+                                2025
+                                    <a href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/138607488"><br/><br/>
+                                        See Certificate
+                                    </a>
+                            </li>
                             </ul>
                         </div>
                     </div>
