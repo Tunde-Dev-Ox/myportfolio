@@ -95,7 +95,6 @@ export default function RootLayout({ children }) {
         </head>
         <body className={inter.className}>
             {children}
-            <Script src="https://scripts.simpleanalyticscdn.com/latest.js"  />
         </body>
     </html>
   );
